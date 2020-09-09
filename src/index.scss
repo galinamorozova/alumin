@@ -1,0 +1,42 @@
+@import './css/variabilities.scss';
+
+//  header {
+//    // background-color:#fbfbfb;
+//  }
+
+.header-info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    color: #646464;
+
+    a {
+        font-size: 1.1em;
+        margin-right: 1em;
+        padding-top: 0.5em;
+        // padding-bottom: 0.5em;  
+        color: #646464;
+    };
+
+    i{
+        color: rgb(213, 53, 85);
+        margin-right: 7px;
+        font-size: 16px;
+
+    
+    };
+
+    a + i {
+        color: #c1bebe;
+        margin-left: 0.5em;
+        margin-right: 1em;
+    };
+
+
+}
+
+
+
+
+
+

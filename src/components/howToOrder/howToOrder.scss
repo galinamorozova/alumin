@@ -1,0 +1,61 @@
+@import '../../css/variabilities.scss';
+
+.order {
+
+    margin-top: 7em;
+    margin-bottom: 7em;
+
+    h2 {
+        font: 3em $roboto-slab;
+        text-transform: uppercase;
+        color: #222222;
+        font-weight: 700;
+        margin-bottom: 2em;
+        margin-top: 2em;
+        text-transform: uppercase;
+
+    }
+
+    .orderWrapper {
+        display: grid;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            //grid-gap: 1em;
+            align-items: center;
+    
+            i {
+                //color: #646464;
+                //color: #43a906;
+                color: rgb(213, 53, 85);
+                font-size: 5em;
+                grid-row: span 2;
+
+            };
+
+            .fa-reply, .fa-share {
+                //color: #43a906;
+                //color: #646464;
+                //color: #222222;
+                color: rgba(155, 155, 155, 0.9);
+                transform: rotateX(150deg);
+            }
+    
+    
+    
+            p {
+                margin-bottom: 3.5em;
+                margin-top: 1.5em;
+                font-size: 1em;
+                font-family: $open-sans;
+                color: #222222;
+                text-transform: uppercase;
+            }
+
+            a {
+                color:#43a906;
+                //color: rgb(213, 53, 85);
+                font-size: 1.2em;
+            }
+    }
+}
+

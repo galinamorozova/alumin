@@ -1,0 +1,184 @@
+@import '../../../../css/variabilities.scss';
+
+.industrialGates {
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            flex-grow: 1;
+        }
+    
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5rem;
+
+        button {
+            padding: 2rem;
+            font-family: $roboto-slab;
+            text-transform: uppercase;
+            border: 1.5px solid rgba(169, 169, 169, 0.2);
+            border-bottom: 1.5px solid #fbfbfb;
+            border-left: 1.5px solid #fbfbfb;
+            background-color: #fff;
+
+
+            &:hover, &:active, &:focus {
+            outline: none;
+            background-color: #fbfbfb;
+            font-weight: bold;
+            color: #43a906; 
+            };
+            
+        };
+
+
+    }
+
+    .content {
+        border: 2px solid #fbfbfb;
+        background-color: #fbfbfb;
+        box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+        margin-bottom: 5rem;
+        font-family: $open-sans;
+        text-align: left;
+
+        h4 {
+            font-family: $roboto-slab;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            text-align: center;
+            margin-top: 6rem;
+            
+        };
+        h5 {
+            font-family: $roboto-slab;
+            font-weight: normal;
+            font-style: italic;
+            font-size: 1rem;
+            }
+
+
+        .characteristicWrapper {
+            display: flex;
+            justify-content: space-between;
+
+            .proTrend {
+                width: 110%;
+            }
+
+            h4 {
+                margin-top: 0;
+            }
+
+            div {
+                
+                padding: 2rem 1rem;
+                color: #393939;
+                line-height: 1.25rem;
+                text-align: justify;
+
+                li {
+                    margin-top: 1rem;
+                }
+            }
+
+            p {
+                
+                padding-bottom: 0.5rem;
+            }
+
+            img {
+                width: 15rem;
+                margin-top: 2rem;
+                
+            }
+        };
+
+        .panelWrapper {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                width: 18rem;
+                height: 15rem;
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                };  
+            };  
+        };
+
+        [alt='цветовая схема'] {
+           margin-top: 4rem;
+            width: 100%;
+        };
+        .wicket {
+            margin-top: 6rem;
+
+            h5 {
+                text-transform: uppercase;
+            }
+
+            .wicketWrapper {
+                margin-top: 2rem;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+
+                div {
+                    margin-bottom: 2rem;
+                };
+                img {
+                    width: 34rem;
+                }
+            };
+
+        };
+
+        .windows, .sideDoor, .tech {
+
+            margin-bottom: 6rem;
+            
+            h5{
+                text-transform: uppercase;
+            };
+
+            .windowsWrapper, .doorWrapper, .techWrapper {
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 1rem;
+                
+                [alt='Одновальная система балансировки'], [alt='Двухвальная система балансировки'] {
+                    width: 25rem;
+                };
+            };
+        };
+
+        .lock, .sideDoor, .wet, .ind_panoram, .vandal {
+            margin-bottom: 6rem;
+            h5{
+                text-transform: uppercase;
+            };
+
+           .lockWrapper, .doorWrapper, .wetWrapper, .panoramWrapper, .vandalWrapper {
+               display: flex;
+               justify-content: space-around;
+               align-items: center;
+
+               p {
+                   width: 70%;
+               };
+
+           };
+        };
+    };
+   
+}

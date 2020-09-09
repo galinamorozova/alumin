@@ -1,24 +1,131 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink
+} from "react-router-dom";
+
+import './App.scss';
+import logo from './images/logo-2.png'
+
+import Products from './components/products/Products';
+import HowToOrder from './components/howToOrder/HowToOrder';
+import Manufactures from './components/manufactures/Manufactures';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
+import Culc from './components/culc/Culc';
+import Callback from './components/callback/Callback';
+import Measuring from './components/measuring/Measuring';
+
+import Gates from './components/gates/Gates';
+import Garage from '././components/gates/gateKinds/garage/Garage';
+import Industrial from './components/gates/gateKinds/industrial/Industrial';
+import DoubleLeaf from './components/gates/gateKinds/doubleLeaf/DoubleLeaf';
+import Sliding from './components/gates/gateKinds/sliding/Sliding';
+import Panoramic from './components/gates/gateKinds/panoramic/Panoramic';
+import Fast from './components/gates/gateKinds/fast/Fast';
+import Wicket from './components/gates/gateKinds/wicket/Wicket';
+import FasadeWicket from './components/gates/gateKinds/fasadeWicket/FasadeWicket';
+
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+     <div>
+      <section className="titlePanel">
+        <div className="container">
+          <div className="logoButtons">
+            <img src={logo} alt="лого"/>
+
+            <div className="mainButtons">
+              <NavLink to="/culc">калькулятор</NavLink>
+              <NavLink to="/measuring">заказать бесплатный замер</NavLink>
+              <NavLink to="/callback">заказать обратный звонок</NavLink> 
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section className="navMenu">
+        <div className="container">
+        
+          <nav>
+                  <NavLink className="nav-link" to="/products">Продукция</NavLink>
+                  <NavLink className="nav-link" to="/howToOrder">Как заказать</NavLink>
+                  <NavLink className="nav-link" to="/manufactures">Производители</NavLink>
+                  <NavLink className="nav-link" to="/projects">Наши обьекты</NavLink>
+                  <NavLink className="nav-link" to="/contact">Контакты</NavLink>    
+          </nav>
+        </div>
+      </section>
+      
+      
+      {/* A <Switch> looks through its children <Route>s and
+                  renders the first one that matches the current URL. */}
+            <Switch>
+            <Route path="/howToOrder">
+              <HowToOrder />
+            </Route>
+            <Route path="/manufactures">
+              <Manufactures />
+            </Route>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/culc">
+              <Culc />
+            </Route>
+            <Route path="/callback">
+              <Callback />
+            </Route>
+            <Route path="/measuring">
+              <Measuring />
+            </Route>
+            <Route path="/gates">
+              <Gates />
+            </Route>
+            <Route path="/garage">
+              <Garage />
+            </Route>
+            <Route path="/industrial">
+              <Industrial />
+            </Route>
+            <Route path="/doubleLeaf">
+              <DoubleLeaf />
+            </Route>
+            <Route path="/sliding">
+              <Sliding />
+            </Route>
+            <Route path="/panoramic">
+              <Panoramic />
+            </Route>
+            <Route path="/fast">
+              <Fast />
+            </Route>
+            <Route path="/wicket">
+              <Wicket />
+            </Route>
+            <Route path="/fasadeWicket">
+              <FasadeWicket />
+            </Route>
+            <Route path="/">
+              <Products />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 }

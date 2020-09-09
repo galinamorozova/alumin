@@ -1,0 +1,37 @@
+@import '../../css/variabilities.scss';
+
+.footer {
+    background-color: #222222;
+    //margin-top: 5rem;
+
+    
+    p, h3, a {
+        font-family: $open-sans;
+        color: #ffffff;
+        font-size: 0.80em;
+        padding: 0.3em 0;
+    };
+
+    h3 {
+        text-transform: uppercase;
+        padding-bottom: 5em;
+    }
+
+
+    .footerWrapper {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 80%;
+        grid-auto-flow: column;
+
+         .footerProducts {
+            grid-column: 2 / 4;
+         }
+
+       
+    }
+
+    
+
+
+}

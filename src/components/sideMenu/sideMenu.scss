@@ -1,0 +1,82 @@
+@import '../../css/variabilities.scss';
+
+.sideMenu {
+    list-style: none;
+    text-align: left;
+    max-width: 20%;
+    margin-top: 4rem;
+    font-family: $roboto-slab;
+
+    ul {
+        margin-bottom: 1rem;
+        list-style: none;
+        padding-left: 0;
+
+        a{
+            text-decoration: none;
+            transition: 200ms;
+            font-family: $roboto-slab;
+
+
+            &:visited {
+                color: #393939;
+            };
+
+            &:hover, &:active {
+                color: #43a906;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-decoration: underline;
+            };
+
+            
+          };
+       
+    }
+
+      .fa-chevron-down {
+         padding-left: 0;
+         color:#43a906;
+      };
+
+      .fa-grip-lines-vertical {
+          padding-left: 0;
+      }
+
+
+     i {
+         margin-right: 0.75rem;
+         padding-left: 1rem;
+     }
+
+    .menu_item {
+        color: #393939;
+        cursor: pointer;
+        margin-top: 0.5rem;
+        
+    }
+
+     .submenu_item {
+        
+        border-left: 3px solid #DDDDDD;
+        margin-top: 0.5rem;
+        margin-left: 1.5rem;
+        padding-left: 1rem;
+        text-transform: initial;
+        transition-property: all;
+        transition: 200ms;
+        
+
+        &:hover, &:active, &:focus {
+            color: #43a906;
+            text-decoration: underline;
+            letter-spacing: 1px;
+        }
+
+       
+    }
+
+    & > ul:last-of-type > li {
+        text-transform: uppercase;
+    }
+}
