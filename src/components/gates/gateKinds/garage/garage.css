@@ -1,0 +1,230 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, p, a, img {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.garageGates .menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.garageGates .menu_content .button_content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.garageGates .buttonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 5rem;
+}
+
+.garageGates .buttonWrapper button {
+  padding: 2rem;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  border: 1.5px solid rgba(169, 169, 169, 0.2);
+  border-bottom: 1.5px solid #fbfbfb;
+  border-left: 1.5px solid #fbfbfb;
+  background-color: #fff;
+}
+
+.garageGates .buttonWrapper button:hover, .garageGates .buttonWrapper button:active, .garageGates .buttonWrapper button:focus {
+  outline: none;
+  background-color: #fbfbfb;
+  font-weight: bold;
+  color: #43a906;
+}
+
+.garageGates .content {
+  border: 2px solid #fbfbfb;
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+          box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+  margin-bottom: 5rem;
+  font-family: "Open Sans";
+  text-align: left;
+}
+
+.garageGates .content h4 {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.garageGates .content h5 {
+  font-family: "Roboto Slab";
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.garageGates .content .characteristicWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.garageGates .content .characteristicWrapper h4 {
+  margin-top: 0;
+}
+
+.garageGates .content .characteristicWrapper div {
+  width: 50%;
+  padding: 2rem 1rem;
+  color: #393939;
+  line-height: 1.25rem;
+  text-align: justify;
+}
+
+.garageGates .content .characteristicWrapper div li {
+  margin-top: 1rem;
+}
+
+.garageGates .content .characteristicWrapper p {
+  padding-bottom: 0.5rem;
+}
+
+.garageGates .content .characteristicWrapper img {
+  width: 15rem;
+  margin-top: 2rem;
+}
+
+.garageGates .content .panelWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.garageGates .content .woodColor {
+  margin-bottom: 1rem;
+}
+
+.garageGates .content .woodColor img {
+  width: 20rem;
+}
+
+.garageGates .content .panelColor img {
+  width: 100%;
+}
+
+.garageGates .content .wicket {
+  margin-top: 6rem;
+}
+
+.garageGates .content .wicket h5 {
+  text-transform: uppercase;
+}
+
+.garageGates .content .wicket .wicketWrapper {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.garageGates .content .wicket .wicketWrapper div {
+  margin-bottom: 2rem;
+}
+
+.garageGates .content .windows, .garageGates .content .sideDoor {
+  margin-bottom: 6rem;
+}
+
+.garageGates .content .windows h5, .garageGates .content .sideDoor h5 {
+  text-transform: uppercase;
+}
+
+.garageGates .content .windows .windowsWrapper, .garageGates .content .windows .doorWrapper, .garageGates .content .sideDoor .windowsWrapper, .garageGates .content .sideDoor .doorWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.garageGates .content .lock, .garageGates .content .unblocking {
+  margin-bottom: 6rem;
+}
+
+.garageGates .content .lock h5, .garageGates .content .unblocking h5 {
+  text-transform: uppercase;
+}
+
+.garageGates .content .lock .lockWrapper, .garageGates .content .lock .unblockingWrapper, .garageGates .content .unblocking .lockWrapper, .garageGates .content .unblocking .unblockingWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.garageGates .content .lock .lockWrapper p, .garageGates .content .lock .unblockingWrapper p, .garageGates .content .unblocking .lockWrapper p, .garageGates .content .unblocking .unblockingWrapper p {
+  width: 70%;
+}
+
+.garageGates .content .techCharacteristics {
+  text-align: center;
+}
+
+.garageGates .content .techCharacteristics img {
+  width: 28rem;
+  margin: 4rem 2rem;
+}
+
+.garageGates .content .techTable {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: repeat 16, 1fr;
+      grid-template-rows: repeat 16, 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.garageGates .content .techTable p {
+  border: 1px solid #dddddd;
+  padding: 0.35rem;
+}
+
+.garageGates .content .techTable p:nth-child(3n+1) {
+  grid-column: span 2;
+}
+/*# sourceMappingURL=garage.css.map */

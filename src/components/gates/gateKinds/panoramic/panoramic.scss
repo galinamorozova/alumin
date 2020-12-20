@@ -2,6 +2,35 @@
 
 .panoramicGates {
 
+    color: #393939;
+
+    h3 {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-weight: bold;
+        margin-top: 5rem;
+
+        &:first-of-type{
+            margin-top: -1rem;
+        }
+    }
+
+    h4 {
+        text-transform: initial;
+        font-family: $roboto-slab;
+        font-size: 1.05rem;
+    }
+
+    p{
+        text-align: justify;
+        margin: 2rem 0;
+    }
+
+    span {
+        color: #a5a4a4;
+    }
+
+
     .menu_content{
         display: flex;
 
@@ -45,6 +74,88 @@
         margin-bottom: 5rem;
         font-family: $open-sans;
         padding: 3rem 2rem;
+
+        img[alt='панорамные ворота'] {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        i {
+            color: #43a906;
+            font-size: 1.3rem;
+            margin-right: 1rem;
+        }
+
+
+        .typeWrapper, .variantWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-rows: 1fr;
+            gap: 1%;
+            justify-items: center;
+            margin-top: 6rem;
+
+            
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 15rem;
+                }
+            
+        }
+
+        .variantWrapper {
+            img {
+                height: 22rem;
+            }
+        }
+
+        img[alt='цвета']{
+            max-width: 70%;
+        }
+
+        .controlWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            grid-template-rows: 1fr;
+            gap: 1%;
+            justify-items: center;
+            align-items: center;
+            
+    
+            div > img {
+                object-fit: cover;
+                max-height: 100%;
+                width: 15rem;
+                
+            }
+        }
+        .additionWrapper {
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-rows: 1fr;
+            gap: 1%;
+            align-items: start;
+
+            div {
+                width: 20rem;
+                height: 100%;
+                background-color: #fff;
+                border: 1px solid rgb(186, 186, 186);
+
+                img {
+                    object-fit: cover;
+                    max-height: 100%;
+                    max-width: 100%;
+                    border: 1px solid rgb(186, 186, 186);
+                }
+            }
+            p {
+                margin: 2rem;
+            }
+        }
+    
     }
  
    

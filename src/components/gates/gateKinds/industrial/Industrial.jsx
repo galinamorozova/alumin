@@ -111,14 +111,14 @@ export default function Industrial() {
                             <h5>Микроволна</h5>
                             <div className='panelWrapper'>
                                 <div><img src={microwave} alt='микроволна'/></div>
-                                <div><img src={microwave1} alt='микроволна'/></div>
-                                <div><img src={microwave2} alt='микроволна'/></div>
+                                <img src={microwave1} alt='микроволна'/>
+                                <img src={microwave2} alt='микроволна'/>
                             </div>
                             <h5>S-гофр</h5>
                             <div className='panelWrapper'>
-                                <div><img src={sgofr} alt='S-гофр'/></div>
-                                <div><img src={sgofr1} alt='S-гофр'/></div>
-                                <div><img src={sgofr2} alt='S-гофр'/></div>
+                                <img src={sgofr} alt='S-гофр'/>
+                                <img src={sgofr1} alt='S-гофр'/>
+                                <img src={sgofr2} alt='S-гофр'/>
                             </div>
                             <img src={colorPanel} alt='цветовая схема'/>
                             <p>* По желанию заказчика возможно нанесение на полотно ворот индивидуальных рисунков любой степени сложности методом цифровой печати.</p>
@@ -166,7 +166,7 @@ export default function Industrial() {
                                         </div>
                                     </div>
                                 </div>
-                            <div className='windows'>
+                         
                                 <h5>Встроеные окна</h5>
                                 <div className='windowsWrapper'>
                                     <img src={windows1} alt='встроеные окна'/>
@@ -175,43 +175,40 @@ export default function Industrial() {
                                     <img src={windows4} alt='встроеные окна'/>
                                 </div>
                                 <p>Применение окон в воротах позволяет экономить на освещении производственных цехов. В ассортименте «Алютех» имеются различные виды остекления промышленных ворот.</p>
-                            </div>
-                            <div className='lock'>
+                            
                                     <h5>Замок</h5>
                                     <div className='lockWrapper'>
                                         <img src={lock} alt='замок'/>
                                         <p>Для помещений без дополнительного входа предлагается ригельный замок. Он позволяет открывать и закрывать ворота как изнутри, так и снаружи.</p>
                                     </div>
-                            </div>
-                            <div className='sideDoor'>
+                            
                                     <h5>Боковая дверь</h5>
                                     <div className='doorWrapper'>
                                         <img src={door1} alt='боковая дверь'/>
                                         <p>Боковая дверь и секционные ворота выполнены в едином стиле и гармонично вписываются в фасад здания, идеально дополняя друг друга. Калитка изготавливается из панелей с таким же рисунком и цветом, как и секционные ворота.</p>
                                     </div>
-                             </div>
-                             <div className='wet'>
+                             
+                            
                                     <h5>Комплектация для особенно влажных условий*</h5>
                                     <div className='wetWrapper'>
                                         <img src={wet} alt='для влажных условий'/>
                                         <p>Для автомоек и других помещений с повышенной влажностью конструкторы «АЛЮТЕХ» предусмотрели специальный комплект деталей. Тросы, метизы и оси роликов в нем изготовили из нержавеющей стали, а систему направляющих покрыли защитным лакокрасочным покрытием. (* - только ProPlus) </p>
                                     </div>
-                             </div>
-                             <div className='ind_panoram'>
+                           
+                             
                                     <h5>Панорамное остекление</h5>
                                     <div className='panoramWrapper'>
                                         <img src={indPanoram} alt='панорамное остекление'/>
                                         <p>Одна или несколько панорамных панелей – и новый облик ваших ворот готов. По сравнению со встроенными окнами, вы получите еще больший обзор и освещение.</p>
                                     </div>
-                             </div>
-                             <div className='vandal'>
+                      
                                     <h5>Защита от вандалов</h5>
                                     <div className='vandalWrapper'>
                                         <img src={vandal} alt='защита от вандалов'/>
                                         <p>С устройством от поддомкрачивания ворота защищены от взлома. Устройство заблокирует полотно при его несанкционированном подъеме.</p>
                                     </div>
-                             </div>
-                             <div className='tech'>
+                           
+                         
                                 <h4>Технические характеристики</h4>
                                 <div className='techWrapper'>
                                     <div>
@@ -223,7 +220,7 @@ export default function Industrial() {
                                     <p>только для ворот ProPLUS</p>
                                     </div>
                                 </div>
-                            </div>
+                          
                 </div>
                         }
                         {activeTab === 2 && 

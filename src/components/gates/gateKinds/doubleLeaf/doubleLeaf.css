@@ -1,0 +1,165 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, p, a, img {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.doubleLeaf {
+  color: #393939;
+}
+
+.doubleLeaf img {
+  margin-bottom: 2rem;
+}
+
+.doubleLeaf h3 {
+  text-transform: uppercase;
+  size: 3rem;
+  margin-top: 5rem;
+  font-family: "Roboto Slab";
+  font-weight: bold;
+}
+
+.doubleLeaf h4 {
+  size: 2rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.doubleLeaf .menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.doubleLeaf .menu_content .button_content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.doubleLeaf .buttonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 5rem;
+}
+
+.doubleLeaf .buttonWrapper button {
+  padding: 2rem;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  border: 1.5px solid rgba(169, 169, 169, 0.2);
+  border-bottom: 1.5px solid #fbfbfb;
+  border-left: 1.5px solid #fbfbfb;
+  background-color: #fff;
+}
+
+.doubleLeaf .buttonWrapper button:hover, .doubleLeaf .buttonWrapper button:active, .doubleLeaf .buttonWrapper button:focus {
+  outline: none;
+  background-color: #fbfbfb;
+  font-weight: bold;
+  color: #43a906;
+}
+
+.doubleLeaf .content {
+  border: 2px solid #fbfbfb;
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+          box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+  margin-bottom: 5rem;
+  font-family: "Open Sans";
+  padding: 3rem 2rem;
+}
+
+.doubleLeaf .content .plusWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 1%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doubleLeaf .content .plusWrapper div > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.doubleLeaf .content .doubleleafDescription {
+  margin: 4rem;
+}
+
+.doubleLeaf .content .doubleleafDescription i {
+  color: #43a906;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.doubleLeaf .content .doubleleafDescription p {
+  text-align: justify;
+}
+
+.doubleLeaf .content .variantWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1%;
+}
+
+.doubleLeaf .content .variantWrapper img {
+  width: 15rem;
+  margin-top: 0.5rem;
+}
+
+.doubleLeaf .content .controlWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 1%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.doubleLeaf .content .controlWrapper div > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+/*# sourceMappingURL=doubleLeaf.css.map */

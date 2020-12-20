@@ -19,18 +19,18 @@ export default function Catalog() {
                         <img src={gates} alt='ворота'/>
                         <p>ворота</p>
                     </NavLink>
-                    <div className='catalogProduct'>
+                    <NavLink className='catalogProduct' to='/automation'>
                         <img src={rollerShutter} alt='автоматика'/>
                         <p>автоматика</p>
-                    </div>
+                    </NavLink>
                     <div className='catalogProduct'>
                         <img src={barrier} alt='шлагбаум'/>
                         <p>шлагбаум</p>
                     </div>
-                    <div className='catalogProduct'>
+                    <NavLink className='catalogProduct' to='/rollets'>
                         <img src={rollerShutter} alt='роллеты/рольставни'/>
                         <p>роллеты/рольставни</p>
-                    </div>
+                    </NavLink>
                     <div className='catalogProduct'>
                         <img src={gates} alt='перегрузочное оборудование'/>
                         <p>перегрузочное оборудование</p>
@@ -39,10 +39,10 @@ export default function Catalog() {
                         <img src={barrier} alt='алюминиевые конструкции'/>
                         <p>алюминиевые конструкции</p>
                     </div>
-                    <div className='catalogProduct'>
+                    <NavLink className='catalogProduct' to='/plasticConstructions'>
                         <img src={gates} alt='пластиковые конструкции'/>
                         <p>пластиковые конструкции</p>
-                    </div>
+                    </NavLink>
                     <div className='catalogProduct'>
                         <img src={rollerShutter} alt='заборы'/>
                         <p>заборы</p>
@@ -51,10 +51,10 @@ export default function Catalog() {
                         <img src={gates} alt='противопожарное оборудование'/>
                         <p>противопожарное оборудование</p>
                     </div>
-                    <div className='catalogProduct'>
+                    <NavLink className='catalogProduct' to='/automaticDoor'>
                         <img src={barrier} alt='автоматические двери'/>
                         <p>автоматические двери</p>
-                    </div>
+                    </NavLink>
                 </div>
                 
 

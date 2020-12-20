@@ -1,0 +1,52 @@
+@import '../../../css/variabilities.scss';
+
+
+.plasticWindow {
+
+    p {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    img[alt='ПВХ окна'] {
+        object-fit: cover;
+        width: 100%;
+        height: 20rem;
+        border: 1px solid grey;
+    }
+
+    .menu_content{
+        display: flex;
+    
+    }
+ 
+
+    .colors {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap:1%;
+
+        img {
+            object-fit: cover;
+            width: 10rem;
+            height: 10rem;
+            border: 1px solid grey;
+        }
+    }
+
+    ul {
+        text-align: left;
+        margin-top: 2rem;
+    }
+    h4 {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    span {
+        font-family: $roboto-slab;
+        font-weight: bold;
+    }
+
+  
+}

@@ -2,6 +2,10 @@
 
 .industrialGates {
 
+    img {
+        border: 1px solid rgb(189, 188, 188);
+    }
+
     .menu_content{
         display: flex;
 
@@ -60,16 +64,20 @@
             font-weight: normal;
             font-style: italic;
             font-size: 1rem;
+            text-transform: uppercase;
             }
 
 
         .characteristicWrapper {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 1%;
 
-            .proTrend {
-                width: 110%;
-            }
+
+             .proTrend {
+                 width: 75%;
+             }
 
             h4 {
                 margin-top: 0;
@@ -93,92 +101,91 @@
             }
 
             img {
-                width: 15rem;
+                height: 20rem;
                 margin-top: 2rem;
                 
             }
         };
 
         .panelWrapper {
-            display: flex;
-            justify-content: space-around;
-
-            div {
-                width: 18rem;
-                height: 15rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 1%;
 
                 img {
                     object-fit: cover;
                     object-position: center;
-                    width: 100%;
-                    height: 100%;
-                };  
-            };  
+                    max-width: 15rem;
+                    height: 15rem;
+                };   
         };
 
         [alt='цветовая схема'] {
            margin-top: 4rem;
-            width: 100%;
-        };
-        .wicket {
-            margin-top: 6rem;
-
-            h5 {
-                text-transform: uppercase;
-            }
+            max-width: 100%;
+        };   
 
             .wicketWrapper {
                 margin-top: 2rem;
                 display: grid;
-                grid-template-rows: 1fr 1fr 1fr;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+                grid-template-rows: 1fr;
+                grid-gap: 1%;
+
 
                 div {
                     margin-bottom: 2rem;
                 };
                 img {
-                    width: 34rem;
+                    width: 31rem;
                 }
             };
 
-        };
 
-        .windows, .sideDoor, .tech {
-
-            margin-bottom: 6rem;
-            
-            h5{
-                text-transform: uppercase;
-            };
-
-            .windowsWrapper, .doorWrapper, .techWrapper {
-                display: flex;
-                justify-content: space-around;
+            .techWrapper {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                grid-template-rows: 1fr;
+                grid-gap: 1%;
+                justify-items: center;
+                align-items: center;
                 margin-bottom: 1rem;
+
+                img {
+                    object-fit: cover;
+                    max-width: 100%;
+                    height: 15rem;
+                }
                 
                 [alt='Одновальная система балансировки'], [alt='Двухвальная система балансировки'] {
                     width: 25rem;
                 };
             };
-        };
+    
 
-        .lock, .sideDoor, .wet, .ind_panoram, .vandal {
-            margin-bottom: 6rem;
-            h5{
-                text-transform: uppercase;
-            };
+           .lockWrapper, .doorWrapper, .wetWrapper, .panoramWrapper, .vandalWrapper, .windowsWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+            grid-gap: 1%;
 
-           .lockWrapper, .doorWrapper, .wetWrapper, .panoramWrapper, .vandalWrapper {
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-
-               p {
-                   width: 70%;
-               };
+                img {
+                    object-fit: cover;
+                    max-width: 100%;
+                    height: 15rem;
+                }
+            
+                p{
+            
+                  text-align: justify;
+                  padding-right: 3rem;
+                  padding-left: 3rem;
+                }
 
            };
-        };
     };
    
 }

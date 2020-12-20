@@ -29,8 +29,19 @@ import Fast from './components/gates/gateKinds/fast/Fast';
 import Wicket from './components/gates/gateKinds/wicket/Wicket';
 import FasadeWicket from './components/gates/gateKinds/fasadeWicket/FasadeWicket';
 
+import Automation from './components/automation/Automation';
+import AutoDoor from './components/automaticDoor/AutoDoor';
 
+import Rollets from './components/rollets/Rollets';
+import StandartRollets from './components/rollets/standartRollets/StandartRollets';
+import RolletsGrid from './components/rollets/rolletsGrid/RolletsGrid';
+import RolletsGates from './components/rollets/rolletsGates/RolletsGates';
+import TransparentRollet from './components/rollets/transparentRollet/TransparentRollet';
 
+import PlasticConstructions from './components/plasticConstuctions/PlasticConstructions';
+import PlasticWindow from './components/plasticConstuctions/plasticWindow/PlasticWindow';
+import PlasticWall from './components/plasticConstuctions/plasticWall/PlasticWall';
+import PlasticDoor from './components/plasticConstuctions/plasticDoor/PlasticDoor';
 
 
 
@@ -118,6 +129,39 @@ function App() {
             </Route>
             <Route path="/fasadeWicket">
               <FasadeWicket />
+            </Route>
+            <Route path="/automation">
+              <Automation />
+            </Route>
+            <Route path="/rollets">
+              <Rollets />
+            </Route>
+            <Route path="/standartRollets">
+              <StandartRollets />
+            </Route>
+            <Route path="/rolletsGrid">
+              <RolletsGrid />
+            </Route>
+            <Route path="/rolletsGates">
+              <RolletsGates />
+            </Route>
+            <Route path="/transparentRollet">
+              <TransparentRollet />
+            </Route>
+            <Route path="/plasticConstructions">
+              <PlasticConstructions />
+            </Route>
+            <Route path="/plasticWindow">
+              <PlasticWindow />
+            </Route>
+            <Route path="/plasticWall">
+              <PlasticWall />
+            </Route>
+            <Route path="/plasticDoor">
+              <PlasticDoor />
+            </Route>
+            <Route path="/automaticDoor">
+              <AutoDoor />
             </Route>
             <Route path="/">
               <Products />

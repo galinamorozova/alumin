@@ -5,6 +5,7 @@
     text-align: left;
     max-width: 20%;
     margin-top: 4rem;
+    padding-right: 1rem;
     font-family: $roboto-slab;
 
     ul {
@@ -37,10 +38,12 @@
       .fa-chevron-down {
          padding-left: 0;
          color:#43a906;
+         cursor: initial;
       };
 
       .fa-grip-lines-vertical {
           padding-left: 0;
+          cursor: initial;
       }
 
 

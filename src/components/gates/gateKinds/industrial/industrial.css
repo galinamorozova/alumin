@@ -1,0 +1,223 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, p, a, img {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.industrialGates .menu_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.industrialGates .menu_content .button_content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.industrialGates .buttonWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 5rem;
+}
+
+.industrialGates .buttonWrapper button {
+  padding: 2rem;
+  font-family: "Roboto Slab";
+  text-transform: uppercase;
+  border: 1.5px solid rgba(169, 169, 169, 0.2);
+  border-bottom: 1.5px solid #fbfbfb;
+  border-left: 1.5px solid #fbfbfb;
+  background-color: #fff;
+}
+
+.industrialGates .buttonWrapper button:hover, .industrialGates .buttonWrapper button:active, .industrialGates .buttonWrapper button:focus {
+  outline: none;
+  background-color: #fbfbfb;
+  font-weight: bold;
+  color: #43a906;
+}
+
+.industrialGates .content {
+  border: 2px solid #fbfbfb;
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+          box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+  margin-bottom: 5rem;
+  font-family: "Open Sans";
+  text-align: left;
+}
+
+.industrialGates .content h4 {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.industrialGates .content h5 {
+  font-family: "Roboto Slab";
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.industrialGates .content .characteristicWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.industrialGates .content .characteristicWrapper .proTrend {
+  width: 110%;
+}
+
+.industrialGates .content .characteristicWrapper h4 {
+  margin-top: 0;
+}
+
+.industrialGates .content .characteristicWrapper div {
+  padding: 2rem 1rem;
+  color: #393939;
+  line-height: 1.25rem;
+  text-align: justify;
+}
+
+.industrialGates .content .characteristicWrapper div li {
+  margin-top: 1rem;
+}
+
+.industrialGates .content .characteristicWrapper p {
+  padding-bottom: 0.5rem;
+}
+
+.industrialGates .content .characteristicWrapper img {
+  width: 15rem;
+  margin-top: 2rem;
+}
+
+.industrialGates .content .panelWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.industrialGates .content .panelWrapper div {
+  width: 18rem;
+  height: 15rem;
+}
+
+.industrialGates .content .panelWrapper div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.industrialGates .content [alt='цветовая схема'] {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.industrialGates .content .wicket {
+  margin-top: 6rem;
+}
+
+.industrialGates .content .wicket h5 {
+  text-transform: uppercase;
+}
+
+.industrialGates .content .wicket .wicketWrapper {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.industrialGates .content .wicket .wicketWrapper div {
+  margin-bottom: 2rem;
+}
+
+.industrialGates .content .wicket .wicketWrapper img {
+  width: 34rem;
+}
+
+.industrialGates .content .windows, .industrialGates .content .sideDoor, .industrialGates .content .tech {
+  margin-bottom: 6rem;
+}
+
+.industrialGates .content .windows h5, .industrialGates .content .sideDoor h5, .industrialGates .content .tech h5 {
+  text-transform: uppercase;
+}
+
+.industrialGates .content .windows .windowsWrapper, .industrialGates .content .windows .doorWrapper, .industrialGates .content .windows .techWrapper, .industrialGates .content .sideDoor .windowsWrapper, .industrialGates .content .sideDoor .doorWrapper, .industrialGates .content .sideDoor .techWrapper, .industrialGates .content .tech .windowsWrapper, .industrialGates .content .tech .doorWrapper, .industrialGates .content .tech .techWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.industrialGates .content .windows .windowsWrapper [alt='Одновальная система балансировки'], .industrialGates .content .windows .windowsWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .windows .doorWrapper [alt='Одновальная система балансировки'], .industrialGates .content .windows .doorWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .windows .techWrapper [alt='Одновальная система балансировки'], .industrialGates .content .windows .techWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .sideDoor .windowsWrapper [alt='Одновальная система балансировки'], .industrialGates .content .sideDoor .windowsWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .sideDoor .doorWrapper [alt='Одновальная система балансировки'], .industrialGates .content .sideDoor .doorWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .sideDoor .techWrapper [alt='Одновальная система балансировки'], .industrialGates .content .sideDoor .techWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .tech .windowsWrapper [alt='Одновальная система балансировки'], .industrialGates .content .tech .windowsWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .tech .doorWrapper [alt='Одновальная система балансировки'], .industrialGates .content .tech .doorWrapper [alt='Двухвальная система балансировки'], .industrialGates .content .tech .techWrapper [alt='Одновальная система балансировки'], .industrialGates .content .tech .techWrapper [alt='Двухвальная система балансировки'] {
+  width: 25rem;
+}
+
+.industrialGates .content .lock, .industrialGates .content .sideDoor, .industrialGates .content .wet, .industrialGates .content .ind_panoram, .industrialGates .content .vandal {
+  margin-bottom: 6rem;
+}
+
+.industrialGates .content .lock h5, .industrialGates .content .sideDoor h5, .industrialGates .content .wet h5, .industrialGates .content .ind_panoram h5, .industrialGates .content .vandal h5 {
+  text-transform: uppercase;
+}
+
+.industrialGates .content .lock .lockWrapper, .industrialGates .content .lock .doorWrapper, .industrialGates .content .lock .wetWrapper, .industrialGates .content .lock .panoramWrapper, .industrialGates .content .lock .vandalWrapper, .industrialGates .content .sideDoor .lockWrapper, .industrialGates .content .sideDoor .doorWrapper, .industrialGates .content .sideDoor .wetWrapper, .industrialGates .content .sideDoor .panoramWrapper, .industrialGates .content .sideDoor .vandalWrapper, .industrialGates .content .wet .lockWrapper, .industrialGates .content .wet .doorWrapper, .industrialGates .content .wet .wetWrapper, .industrialGates .content .wet .panoramWrapper, .industrialGates .content .wet .vandalWrapper, .industrialGates .content .ind_panoram .lockWrapper, .industrialGates .content .ind_panoram .doorWrapper, .industrialGates .content .ind_panoram .wetWrapper, .industrialGates .content .ind_panoram .panoramWrapper, .industrialGates .content .ind_panoram .vandalWrapper, .industrialGates .content .vandal .lockWrapper, .industrialGates .content .vandal .doorWrapper, .industrialGates .content .vandal .wetWrapper, .industrialGates .content .vandal .panoramWrapper, .industrialGates .content .vandal .vandalWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.industrialGates .content .lock .lockWrapper p, .industrialGates .content .lock .doorWrapper p, .industrialGates .content .lock .wetWrapper p, .industrialGates .content .lock .panoramWrapper p, .industrialGates .content .lock .vandalWrapper p, .industrialGates .content .sideDoor .lockWrapper p, .industrialGates .content .sideDoor .doorWrapper p, .industrialGates .content .sideDoor .wetWrapper p, .industrialGates .content .sideDoor .panoramWrapper p, .industrialGates .content .sideDoor .vandalWrapper p, .industrialGates .content .wet .lockWrapper p, .industrialGates .content .wet .doorWrapper p, .industrialGates .content .wet .wetWrapper p, .industrialGates .content .wet .panoramWrapper p, .industrialGates .content .wet .vandalWrapper p, .industrialGates .content .ind_panoram .lockWrapper p, .industrialGates .content .ind_panoram .doorWrapper p, .industrialGates .content .ind_panoram .wetWrapper p, .industrialGates .content .ind_panoram .panoramWrapper p, .industrialGates .content .ind_panoram .vandalWrapper p, .industrialGates .content .vandal .lockWrapper p, .industrialGates .content .vandal .doorWrapper p, .industrialGates .content .vandal .wetWrapper p, .industrialGates .content .vandal .panoramWrapper p, .industrialGates .content .vandal .vandalWrapper p {
+  width: 70%;
+}
+/*# sourceMappingURL=industrial.css.map */

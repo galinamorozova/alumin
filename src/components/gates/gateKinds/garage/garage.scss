@@ -2,6 +2,10 @@
 
 .garageGates {
 
+    img {
+        border: 1px solid rgb(189, 188, 188);
+    }
+
     .menu_content{
         display: flex;
 
@@ -10,6 +14,7 @@
         }
     
     }
+
 
     .buttonWrapper {
         display: flex;
@@ -61,17 +66,22 @@
             font-weight: normal;
             font-style: italic;
             font-size: 1rem;
+            text-transform: uppercase;
+            margin-top: 5rem;
         }
 
         .characteristicWrapper {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 1%;
+
 
             h4 {
                 margin-top: 0;
             }
 
             div {
-                width: 50%;
                 padding: 2rem 1rem;
                 color: #393939;
                 line-height: 1.25rem;
@@ -93,79 +103,56 @@
             }
         };
 
-        .panelWrapper{
-            display: flex;
-            justify-content: space-between;
+        .panelWrapper,.colors, .woodColor, .windowsWrapper, .doorWrapper{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 1%;
+
         }
 
-        .woodColor {
+        .woodColor, .doorWrapper {
 
             margin-bottom: 1rem;
             img {
-                width: 20rem;
+                height: 11rem;
             }
         }
 
         .panelColor {
             img {
-                width: 100%;
+                max-width: 100%;
             }
         }
-
-        .wicket {
-            margin-top: 6rem;
-
-            h5 {
-                text-transform: uppercase;
-            }
 
             .wicketWrapper {
                 margin-top: 2rem;
                 display: grid;
-                grid-template-rows: 1fr 1fr 1fr;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+                grid-template-rows: 1fr;
+                grid-gap: 1%;
 
                 div {
                     margin-bottom: 2rem;
                 };
             };
-
-        }
-
-        .windows, .sideDoor {
-
-            margin-bottom: 6rem;
-            h5{
-                text-transform: uppercase;
-            }
-
-            .windowsWrapper, .doorWrapper {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 1rem;
-            }
-        }
-
-
-        .lock, .unblocking {
-            margin-bottom: 6rem;
-            h5{
-                text-transform: uppercase;
-            }
-
+         
            .lockWrapper, .unblockingWrapper {
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-
-               p {
-                   width: 70%;
-               }
-
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+            grid-gap: 1%;
+            
+                p{
+            
+                  text-align: justify;
+                  padding-right: 3rem;
+                  padding-left: 3rem;
+                }
            }
-        }
 
-        
 
         .techCharacteristics {
             text-align: center;

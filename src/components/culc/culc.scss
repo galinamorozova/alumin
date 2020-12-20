@@ -7,6 +7,89 @@
     p {
         font-family: sans-serif;
         color: #616161;
-        padding-bottom: 3rem;
     }
+
+
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: space-around;
+        margin: 4rem 0 2rem 0;
+        border-bottom: 2px solid rgb(223, 223, 223);
+        padding-bottom: 0.3rem;
+
+        button {
+            padding: 2rem 4rem;
+            font-family: $roboto-slab;
+            text-transform: uppercase;
+            border: 1px solid rgb(225, 120, 141);
+            background-color: rgb(225, 120, 141);
+            box-shadow: 3px 3px 3px -3px rgb(222, 66, 97);
+            border-radius: 5px; 
+
+            &:hover, &:active, &:focus {
+            outline: none;
+            background-color: #fbfbfb;
+            border: 1px solid rgb(223, 223, 223);
+            font-weight: bold;
+            color: #43a906; 
+            };
+            
+        };
+    }
+
+    .contentCallback {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+    
+    
+    h2 {
+            font-family: $roboto-slab;
+            font-size: 2em;
+            color: #222222;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 0.5em;
+    };
+    button {
+        padding: 1.5rem 5.2rem;
+        margin-top: 2.5rem;
+        border-radius: 2px;
+        background-color: #43a906;
+        font-family: $roboto-slab;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    [placeholder] {
+        font-family: $open-sans;
+        font-size: 14px;
+        font-style: italic;
+        text-align: left;
+        color: #696969;
+        padding-left: 10px;
+
+    }
+
+    .callbackWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+
+        input, textarea {
+            margin-bottom: 1rem;
+            height: 2.5rem;
+        };
+
+        [placeholder="Интересующее изделие, размеры, цвет и т.п. *"] {
+            height: 10rem;
+        }
+    }
+    }
+
 }

@@ -1,0 +1,76 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, p, a, img {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.order {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.order h2 {
+  font: 3em "Roboto Slab";
+  text-transform: uppercase;
+  color: #222222;
+  font-weight: 700;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+.order .orderWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 70% 15%;
+      grid-template-columns: 15% 70% 15%;
+  -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order .orderWrapper i {
+  color: #d53555;
+  font-size: 5em;
+  grid-row: span 2;
+}
+
+.order .orderWrapper .fa-reply, .order .orderWrapper .fa-share {
+  color: rgba(155, 155, 155, 0.9);
+  -webkit-transform: rotateX(150deg);
+          transform: rotateX(150deg);
+}
+
+.order .orderWrapper p {
+  margin-bottom: 3.5em;
+  margin-top: 1.5em;
+  font-size: 1em;
+  font-family: "Open Sans";
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.order .orderWrapper a {
+  color: #43a906;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=howToOrder.css.map */

@@ -1,9 +1,24 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import './contact.scss';
 import ContactMap from '../ContactMap/ContactMap';
 
 
 export default function Contact() {
+   
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_tve281c', 'template_lbuko4l', e.target, 'user_hmNRnq2ruQhkVMOyTfcHi')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+           e.target.reset()
+          // alert('Отправлено')
+      }
+    
     return(
         <section className="contacts">
             <div className='container'>
@@ -27,19 +42,20 @@ export default function Contact() {
                             <ContactMap/>
 
                         </div>
-                        <div className="drop-message">
-                            <h4>Написать самому главному</h4>
-                            <div className="message-form">
-                                <input type="text" placeholder="Имя *" required/>
-                                <input type="email" placeholder="Email *" required/>
-                                <input type="phone" placeholder="Телефон *" required/>
-                                <input type="text" placeholder="Сообщение *" required/>
-                            </div>
-                            <label><input type='checkbox'/>Согласие лица на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006</label> <br/>
-                            <button type='submit'>Отправить</button>
+
+                        <form className="drop-message" onSubmit={sendEmail}>
                             
-                            
-                        </div>
+                                <h4>Написать самому главному</h4>
+                                <div className="message-form" >
+                                    <input type="text" placeholder="Имя *" name='name' required/>
+                                    <input type="email" placeholder="Email *" required name="email"/>
+                                    <input type="phone" placeholder="Телефон *" required name="phone"/>
+                                    <textarea type="text" placeholder="Сообщение *" required name='message'/>
+                                </div>
+                                <label><input type='checkbox' required/>Согласие лица на обработку персональных данных в соответствии с ФЗ №152 от 27.07.2006</label> <br/>
+                                <button type='submit'>Отправить</button>
+        
+                        </form>
                     </div>
 
 

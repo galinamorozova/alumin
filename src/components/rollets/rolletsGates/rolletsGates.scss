@@ -1,0 +1,193 @@
+@import '../../../css/variabilities.scss';
+
+.rolletsGates {
+
+    color: #393939;
+
+    h3 {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-size: 1.5rem;
+        margin-top: 8rem;
+        margin-bottom: 2.5rem;
+
+        &:first-of-type {
+            margin-top: -1rem;
+        }
+    
+    }
+
+    h4  {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+    }
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        max-width: 100%;
+    }
+
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            flex-grow: 1;
+        }
+    
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 5rem;
+
+        button {
+            padding: 2rem;
+            font-family: $roboto-slab;
+            text-transform: uppercase;
+            border: 1.5px solid rgba(169, 169, 169, 0.2);
+            border-bottom: 1.5px solid #fbfbfb;
+            border-left: 1.5px solid #fbfbfb;
+            background-color: #fff;
+
+
+            &:hover, &:active, &:focus {
+            outline: none;
+            background-color: #fbfbfb;
+            font-weight: bold;
+            color: #43a906; 
+            };
+            
+        };
+
+
+    }
+
+    .content {
+        border: 2px solid #fbfbfb;
+        background-color: #fbfbfb;
+        box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
+        margin-bottom: 5rem;
+        font-family: $open-sans;
+        padding: 3rem 2rem;
+    }
+
+    .plusWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        background-color: white;
+       
+        div {
+            padding: 2.5rem;
+            border: 1px solid rgb(184, 184, 184);
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgb(184, 184, 184);
+        }
+    }
+ 
+    .typeWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap: 2%;
+        margin-bottom: 6rem;
+        width: 100%;
+        
+
+         div {
+           
+
+            img {
+                object-fit: cover;
+                max-width: 100%;
+                height: 25rem;
+                
+            }
+
+            h4, p {
+                height: 5rem;
+                text-align: center;
+                border-bottom: 1px solid #dfdfdf;
+                margin: 1.5rem 0 0 0;
+            }
+
+            span {
+                color: #acabab;
+                font-size: 0.9rem;
+            }
+         }
+    }
+
+    .variantWrapper {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+
+        img {
+            max-width: 75%;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+        }
+       
+    }
+    img[alt='EV/77W экструдированный смотровой'] {
+        margin-bottom: 0;
+    }
+
+    img[alt='EA/77 экструдированный вентиляционный'] {
+        margin-bottom: 0;
+        margin-top: 2rem;
+    }
+    
+   
+
+    .controlWrapper {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr 1fr;
+        gap: 1%;
+        justify-items: center;
+        align-items: center;
+        box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+        padding: 1.5rem;
+        
+
+        img {
+            object-fit: cover;
+            max-height: 100%;
+            width: 15rem;         
+        }
+    }
+
+    .additionWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap: 3%;
+       
+
+        div {
+            border: 1px solid rgb(184, 184, 184);
+            box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+            background-color: #fff;
+        }
+
+        p {
+            padding-bottom: 2rem;
+        }
+    }
+}

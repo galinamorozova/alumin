@@ -1,0 +1,105 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, p, a, img {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App .titlePanel .logoButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .titlePanel img {
+  width: 25em;
+}
+
+.App .titlePanel a {
+  text-decoration: none;
+  border: 1px solid #d53555;
+  border-radius: 5px;
+  color: #fcf6f6;
+  background-color: #d53555;
+  padding: 1em;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Roboto Slab";
+}
+
+.App .titlePanel a + a {
+  margin-left: 1em;
+}
+
+.App .titlePanel .mainButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .navMenu {
+  -webkit-box-shadow: 0px 1px 3px 0 rgba(155, 155, 155, 0.2);
+          box-shadow: 0px 1px 3px 0 rgba(155, 155, 155, 0.2);
+  background-color: #fbfbfb;
+}
+
+.App .navMenu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .nav-link {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  color: #393939;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.App .nav-link.active {
+  border-bottom: 5px solid #43a906;
+  color: #43a906;
+}
+
+.App .nav-link:hover {
+  color: #43a906;
+}
+/*# sourceMappingURL=App.css.map */

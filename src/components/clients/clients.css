@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, p, a, img {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.clients {
+  padding-bottom: 6em;
+}
+
+.clients h2 {
+  font: 2.3em "Roboto Slab";
+  text-transform: uppercase;
+  color: #222222;
+  font-weight: 700;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.clientsWrapper {
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  grid-gap: 5em;
+}
+
+.clientsWrapper .clientName {
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.clientsWrapper img {
+  max-width: 50%;
+}
+
+.clientsWrapper p {
+  font: 0.7em "Open Sans";
+  text-transform: uppercase;
+  color: #646464;
+}
+/*# sourceMappingURL=clients.css.map */

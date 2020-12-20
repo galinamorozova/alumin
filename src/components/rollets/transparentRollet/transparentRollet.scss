@@ -1,0 +1,91 @@
+@import '../../../css/variabilities.scss';
+
+.transparetnRollet {
+
+    color: #393939;
+    
+
+    h3 {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-weight: bold;
+        margin-top: 7rem;
+    }
+
+    h4 {
+        text-transform: initial;
+        font-family: $roboto-slab;
+        font-size: 1.05rem;
+    }
+
+    p{
+        text-align: justify;
+        margin: 2rem 0;
+    }
+
+    .menu_content{
+        display: flex;
+    }
+    .button_content {
+        margin-left: 1.5rem;
+
+        a {
+            border: 1px solid rgb(213, 53, 85);
+            border-radius: 5px; 
+            color: rgb(252, 246, 246);
+            background-color: rgb(213, 53, 85);
+            padding: 1em;
+            text-transform: uppercase;
+            margin-top: 5rem;
+            font-family: $roboto-slab;
+        };
+
+        .plusesWrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            grid-template-rows: 1fr;
+            justify-items: center;
+            border: 1px solid grey;
+            
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 20rem;
+                border: 1px solid grey;   
+            }
+
+            div {
+                padding: 2rem;
+                background-color: #fbfbfb; 
+            }
+        }
+    }
+
+    img[alt='прозрачные роллеты'] {
+        object-fit: cover;
+        width: 100%;
+        height: 25rem;
+        border: 1px solid grey;
+    }
+    .controlWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1%;
+        justify-items: center;
+        align-items: center;
+        background-color: #fbfbfb; 
+        box-shadow: 0px 1px 3px 0 rgba(41, 41, 41, 0.2);
+        padding: 2rem;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            max-height: 90%;
+            margin-right: 1.5rem;
+            border: 1px solid grey;
+        }
+    }
+    
+
+}

@@ -1,0 +1,88 @@
+@import '../../css/variabilities.scss';
+
+.autoDoor {
+
+    color: #393939;
+
+    // h3 {
+    //     text-transform: uppercase;
+    //     font-family: $roboto-slab;
+    //     font-weight: bold;
+    //     margin-top: 7rem;
+    // }
+
+    // h4 {
+    //     text-transform: initial;
+    //     font-family: $roboto-slab;
+    //     font-size: 1.05rem;
+    // }
+
+    p{
+        text-align: justify;
+        margin: 2rem 0;
+    }
+
+    span {
+        text-transform: uppercase;
+        font-family: $roboto-slab;
+        font-weight: bold;
+        color: rgb(33, 33, 33);
+        text-align: left;
+    }
+
+
+    .menu_content{
+        display: flex;
+    
+    }
+       
+    img[alt='автоматические двери'] {
+        object-fit: cover;
+        width: 100%;
+        height: 25rem;
+        border: 1px solid grey;
+    }
+
+    .typeWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 2%;
+        justify-items: center;
+        margin-top: 5rem;
+
+            
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 15rem;
+                border: 1px solid grey;
+            }
+            
+    }
+
+     .plusWrapper {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+         grid-template-rows: 1fr;
+         background-color: white;
+        
+           
+        div {
+            border: 1px solid rgb(184, 184, 184);
+            background-color: rgb(215, 215, 215);
+        }
+
+        p {
+            margin: 5rem 2rem;
+        }
+    
+        img {
+             object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgb(184, 184, 184);
+        }
+    }
+   
+}

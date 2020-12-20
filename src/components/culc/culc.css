@@ -1,0 +1,33 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, p, a, img {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.culc {
+  padding-top: 4rem;
+}
+
+.culc p {
+  font-family: sans-serif;
+  color: #616161;
+  padding-bottom: 3rem;
+}
+/*# sourceMappingURL=culc.css.map */

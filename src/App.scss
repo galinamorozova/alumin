@@ -66,7 +66,8 @@
     font-family: $roboto-slab;
     font-weight: 700;
     color: #393939;
-    padding: 1.3em 4.4em;
+    padding-top:3rem;
+    padding-bottom: 3rem;
 
     &.active {
       border-bottom: 5px solid #43a906;
