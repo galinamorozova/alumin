@@ -30,6 +30,7 @@ import Wicket from './components/gates/gateKinds/wicket/Wicket';
 import FasadeWicket from './components/gates/gateKinds/fasadeWicket/FasadeWicket';
 
 import Automation from './components/automation/Automation';
+import Barrier from './components/barrier/Barrier';
 import AutoDoor from './components/automaticDoor/AutoDoor';
 
 import Rollets from './components/rollets/Rollets';
@@ -43,7 +44,17 @@ import PlasticWindow from './components/plasticConstuctions/plasticWindow/Plasti
 import PlasticWall from './components/plasticConstuctions/plasticWall/PlasticWall';
 import PlasticDoor from './components/plasticConstuctions/plasticDoor/PlasticDoor';
 
+import AluConstructions from './components/aluConstractions/AluConstractions';
+import AluFasade from './components/aluConstractions/aluFasade/AluFasade';
+import AluBalcony from './components/aluConstractions/aluBalcony/Alubalcony';
+import AluDoor from './components/aluConstractions/aluDoor/AluDoor';
+import AluWindow from './components/aluConstractions/aluWindow/AluWindow';
+import AluWall from './components/aluConstractions/aluWall/AluWall';
 
+import Fence from './components/fence/Fence';
+import Fence3d from './components/fence/3d/Fence3d';
+import MetalFence from './components/fence/metalFence/MetalFence';
+import Picket from './components/fence/picket/Picket';
 
 function App() {
   return (
@@ -133,6 +144,9 @@ function App() {
             <Route path="/automation">
               <Automation />
             </Route>
+            <Route path="/barrier">
+              <Barrier />
+            </Route>
             <Route path="/rollets">
               <Rollets />
             </Route>
@@ -148,6 +162,24 @@ function App() {
             <Route path="/transparentRollet">
               <TransparentRollet />
             </Route>
+            <Route path="/aluConstructions">
+              <AluConstructions />
+            </Route>
+            <Route path="/aluFasade">
+              <AluFasade />
+            </Route>
+            <Route path="/aluBalcony">
+              <AluBalcony/>
+            </Route>
+            <Route path="/aluDoor">
+              <AluDoor/>
+            </Route>
+            <Route path="/aluWindow">
+              <AluWindow/>
+            </Route>
+            <Route path="/aluWall">
+              <AluWall/>
+            </Route>
             <Route path="/plasticConstructions">
               <PlasticConstructions />
             </Route>
@@ -159,6 +191,18 @@ function App() {
             </Route>
             <Route path="/plasticDoor">
               <PlasticDoor />
+            </Route>
+            <Route path="/fence">
+              <Fence />
+            </Route>
+            <Route path="/3d">
+              <Fence3d />
+            </Route>
+            <Route path="/metalFence">
+              <MetalFence />
+            </Route>
+            <Route path="/picket">
+              <Picket />
             </Route>
             <Route path="/automaticDoor">
               <AutoDoor />

@@ -28,7 +28,7 @@ export default function Gates() {
                         <p>гаражные ворота</p>
                     </NavLink>
                     <NavLink className='product' to='/industrial'>
-                        <img src={prom_vorota} alt='Промышленные ворота'></img>
+                        <img src={prom_vorota} alt='Промышленные ворота'/>
                         <p>промышленные ворота</p>
                     </NavLink>
                     <NavLink className='product' to='/doubleLeaf'>

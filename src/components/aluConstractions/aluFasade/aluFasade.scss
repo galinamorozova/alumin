@@ -1,0 +1,43 @@
+@import '../../../css/variabilities.scss';
+
+
+.aluFasade {
+
+
+    p {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            padding-top: 5rem;
+        }
+    
+    }
+
+    img[alt='алюминиевые фасады'] {
+        width: 100%;
+        object-fit: cover;
+        height: 20rem;
+        border: 1px solid rgb(150, 149, 149);
+    }
+
+    .coldWarmAl, .fasadeType {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 3%;
+        margin: 3rem 0 8rem 0;
+        
+
+        p, li {
+            text-align: justify;
+        }
+        
+    }
+}

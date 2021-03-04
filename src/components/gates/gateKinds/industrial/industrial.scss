@@ -15,39 +15,7 @@
     
     }
 
-    .buttonWrapper {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5rem;
-
-        button {
-            padding: 2rem;
-            font-family: $roboto-slab;
-            text-transform: uppercase;
-            border: 1.5px solid rgba(169, 169, 169, 0.2);
-            border-bottom: 1.5px solid #fbfbfb;
-            border-left: 1.5px solid #fbfbfb;
-            background-color: #fff;
-
-
-            &:hover, &:active, &:focus {
-            outline: none;
-            background-color: #fbfbfb;
-            font-weight: bold;
-            color: #43a906; 
-            };
-            
-        };
-
-
-    }
-
     .content {
-        border: 2px solid #fbfbfb;
-        background-color: #fbfbfb;
-        box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
-        margin-bottom: 5rem;
-        font-family: $open-sans;
         text-align: left;
 
         h4 {

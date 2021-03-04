@@ -21,26 +21,26 @@ export default function footer() {
                         <h3>продукция:</h3>
                     </div>
                     <div>
-                        <NavLink to="gates">ворота</NavLink>
-                        <p>автоматика</p>
-                        <p>шлагбаумы</p>
+                        <NavLink to="gates">ворота</NavLink><br/>
+                        <NavLink to="automation">автоматика</NavLink><br/>
+                        <NavLink to="barrier">шлагбаумы</NavLink><br/>
                         <p>заборы</p>
-                        <p>роллеты/рольставни</p>
+                        <NavLink to="rollets">роллеты/рольставни</NavLink>
                     </div>
                     <div>
-                        <p>алюминиевые конструкции</p>
-                        <p>пластиковые конструкции</p>
+                        <NavLink to="aluConstructions">алюминиевые конструкции</NavLink>
+                        <NavLink to="plasticConstructions">пластиковые конструкции</NavLink>
                         <p>противопожарное оборудование</p>
-                        <p>автоматические двери</p>
+                        <NavLink to="automaticDoor">автоматические двери</NavLink>
                         <p>перегрузочное оборудование</p>
                     </div>
                     <div>
                         <h3>навигация по сайту:</h3>
                     </div>
                     <div>
-                        <NavLink to="/culc">калькулятор</NavLink>
-                        <NavLink to="/howToOrder">как заказать</NavLink>
-                        <p>производители</p>
+                        <NavLink to="/culc">калькулятор</NavLink><br/>
+                        <NavLink to="/howToOrder">как заказать</NavLink><br/>
+                        <NavLink to="/manufactures">производители</NavLink><br/>
                         <p>наши обьекты</p>
                         <NavLink to="/contact">напишите нам</NavLink>
                     </div>

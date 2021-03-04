@@ -1,0 +1,15 @@
+@import '../../css/variabilities.scss';
+
+.projects {
+    display: flex;
+  justify-content: center;
+  padding-top: 1em;
+
+    .container {
+        width: 100%;
+        max-width: 600px;
+    }
+    .wrapper {
+    margin: 1rem 0;
+    }
+}

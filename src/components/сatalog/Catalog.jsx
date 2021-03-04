@@ -23,10 +23,10 @@ export default function Catalog() {
                         <img src={rollerShutter} alt='автоматика'/>
                         <p>автоматика</p>
                     </NavLink>
-                    <div className='catalogProduct'>
+                    <NavLink  className='catalogProduct' to='/barrier'>
                         <img src={barrier} alt='шлагбаум'/>
                         <p>шлагбаум</p>
-                    </div>
+                    </NavLink>
                     <NavLink className='catalogProduct' to='/rollets'>
                         <img src={rollerShutter} alt='роллеты/рольставни'/>
                         <p>роллеты/рольставни</p>
@@ -35,18 +35,18 @@ export default function Catalog() {
                         <img src={gates} alt='перегрузочное оборудование'/>
                         <p>перегрузочное оборудование</p>
                     </div>
-                    <div className='catalogProduct'>
+                    <NavLink className='catalogProduct' to='/aluConstructions'>
                         <img src={barrier} alt='алюминиевые конструкции'/>
                         <p>алюминиевые конструкции</p>
-                    </div>
+                    </NavLink>
                     <NavLink className='catalogProduct' to='/plasticConstructions'>
                         <img src={gates} alt='пластиковые конструкции'/>
                         <p>пластиковые конструкции</p>
                     </NavLink>
-                    <div className='catalogProduct'>
+                    <NavLink className='catalogProduct' to='/fence'>
                         <img src={rollerShutter} alt='заборы'/>
                         <p>заборы</p>
-                    </div>
+                    </NavLink>
                     <div className='catalogProduct'>
                         <img src={gates} alt='противопожарное оборудование'/>
                         <p>противопожарное оборудование</p>

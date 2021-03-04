@@ -24,7 +24,7 @@ export default function SideMenu() {
     return(
 <div className='sideMenu'>
     <ul>
-     <li className='menu_item' onClick={showMenu}> <i class="fas fa-grip-lines-vertical"></i> <i class="fas fa-chevron-down"></i>ворота
+     <li className='menu_item' onClick={showMenu}> <i className="fas fa-grip-lines-vertical"></i> <i className="fas fa-chevron-down"></i>ворота
         <ul className='submenu'>
             <li className='submenu_item'>
             <NavLink to='/garage'>гаражные</NavLink></li>
@@ -48,7 +48,8 @@ export default function SideMenu() {
     </li>
     <li className='menu_item'> 
             <NavLink to='/automation'><i class="fas fa-grip-lines-vertical"/>автоматика</NavLink></li>
-    <li className='menu_item'> <i class="fas fa-grip-lines-vertical"></i> шлагбаум</li>
+    <li className='menu_item'> 
+    <NavLink to='/barrier'><i class="fas fa-grip-lines-vertical"></i> шлагбаум</NavLink></li>
     <li className='menu_item' onClick={showMenu}><i class="fas fa-grip-lines-vertical"></i> <i class="fas fa-chevron-down"></i>роллеты/рольставни
         <ul className='submenu'>
             <li className='submenu_item'>
@@ -64,11 +65,16 @@ export default function SideMenu() {
     <li className='menu_item'> <i class="fas fa-grip-lines-vertical"></i> перегрузочное оборудование</li>
     <li className='menu_item' onClick={showMenu}> <i class="fas fa-grip-lines-vertical"></i> <i class="fas fa-chevron-down"/>алюминиевые конструкции
         <ul className='submenu'>
-            <li className='submenu_item'>фасады</li>
-            <li className='submenu_item'>лоджии</li>
-            <li className='submenu_item'>двери</li>
-            <li className='submenu_item'>окна</li>
-            <li className='submenu_item'>перегородки</li>
+            <li className='submenu_item'>
+            <NavLink to='/aluFasade'>фасады</NavLink></li>
+            <li className='submenu_item'>
+            <NavLink to='/aluBalcony'>лоджии</NavLink></li>
+            <li className='submenu_item'>
+            <NavLink to='/aluDoor'>двери</NavLink></li>
+            <li className='submenu_item'>
+            <NavLink to='/aluWindow'>окна</NavLink></li>
+            <li className='submenu_item'>
+            <NavLink to='/aluWall'>перегородки</NavLink></li>
         </ul>
     </li>
     <li className='menu_item' onClick={showMenu}> <i class="fas fa-grip-lines-vertical"></i> <i class="fas fa-chevron-down"></i>пластиковые конструкции
@@ -83,9 +89,12 @@ export default function SideMenu() {
     </li>
     <li className='menu_item' onClick={showMenu}> <i class="fas fa-grip-lines-vertical"></i> <i class="fas fa-chevron-down"></i>заборы
         <ul className='submenu'>
-            <li className='submenu_item'>3D-сетка</li>
-            <li className='submenu_item'>из евроштакетника</li>
-            <li className='submenu_item'>из профильного листа</li>
+            <li className='submenu_item'>
+            <NavLink to='/3d'>3D-сетка</NavLink></li>
+            <li className='submenu_item'>
+            <NavLink to='/picket'>из евроштакетника</NavLink></li>
+            <li className='submenu_item'>
+            <NavLink to='/metalFence'>из профильного листа</NavLink></li>
         </ul>
     </li>
     <li className='menu_item' onClick={showMenu}> <i class="fas fa-grip-lines-vertical"></i> <i class="fas fa-chevron-down"></i>противопожарное оборудование

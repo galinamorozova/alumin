@@ -1,0 +1,51 @@
+@import '../../../css/variabilities.scss';
+
+
+.aluBalcony {
+
+
+    p {
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .menu_content{
+        display: flex;
+
+        .button_content {
+            padding-top: 5rem;
+        }
+    
+    }
+
+    img[alt='алюминиевые лоджии'] {
+        object-fit: cover;
+        height: 25rem;
+        width: 100%;
+    }
+
+    .coldWarmAl, .AlBalconyVariants, .alBalcony{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 3%;
+        margin-top: 5rem;
+        
+
+        p, li {
+            text-align: justify;
+        }
+        
+    }
+
+    .AlBalconyVariants {
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    }
+    .alBalcony {
+        box-shadow: 5px 5px 5px 5px rgba(235, 235, 235, 0.7);
+        padding-right: 4rem;
+        margin-bottom: 10rem;
+    }
+}
