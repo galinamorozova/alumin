@@ -6,6 +6,10 @@
     p {
         text-align: left;
         margin-top: 1rem;
+
+        @media (max-width: 320px) {
+            text-align: justify;
+        }
     }
 
     .menu_content{
@@ -19,11 +23,22 @@
         grid-template-rows: 1fr;
         grid-gap:1%;
 
+        @media (max-width: 320px) {
+            grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+            justify-items: center;
+        }
+
         img {
             object-fit: cover;
             width: 10rem;
             height: 10rem;
             border: 1px solid grey;
+
+            @media (max-width: 320px) {
+                width: 12rem;
+                height: 12rem;
+            }
+
         }
     }
     .doorTittle {
@@ -31,6 +46,11 @@
         img {
             width: 20rem;
             height: 20rem;
+
+            @media (max-width: 320px) {
+                width: 22rem;
+                height: 17rem;
+            }
         }
     }
 
@@ -45,5 +65,10 @@
     span {
         font-family: $roboto-slab;
         font-weight: bold;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
     }
 }

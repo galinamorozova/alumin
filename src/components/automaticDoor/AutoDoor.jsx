@@ -50,14 +50,14 @@ export default function AutoDoor() {
                     <h3>виды автоматических дверей</h3>
                     <div className='typeWrapper'>
 
-                        <div>
-                            <img src={slidingDoor} alt='раздвижные двери'/>
+                        <div className='type'>
+                            <div className='imageWrapper'><img src={slidingDoor} alt='раздвижные двери'/></div>
                             <h4>раздвижные двери</h4>
 
                             <p>Виды:</p>
                             <p>• Одно- и двух створчатые</p>
-                            <p>• Телескопические. Это решение идеально для ситуаций, когда требуется максимальная ширина прохода, но существует конструктивное ограничение проема для открывания створок.
-                            <img src={telescopeDoor} alt='телескопические'/></p>
+                            <p>• Телескопические. Это решение идеально для ситуаций, когда требуется максимальная ширина прохода, но существует конструктивное ограничение проема для открывания створок.</p>
+                            <div className='imageWrapper'><img src={telescopeDoor} alt='телескопические'/></div>
                             <p>• Угловые</p>
                             <p>• Антипаниковые</p>
                             <p>• Противопожарные</p>
@@ -65,8 +65,8 @@ export default function AutoDoor() {
                             <p>• Цельностеклянные</p>
                             <p>• Индивидуальные решения</p>
                         </div>
-                        <div>
-                            <img src={circleDoor} alt='радиусные раздвижные двери'/>
+                        <div className='type'>
+                        <div className='imageWrapper'><img src={circleDoor} alt='радиусные раздвижные двери'/></div>
                             <h4>радиусные раздвижные двери</h4>
 
                             <p>Виды:</p>
@@ -75,14 +75,14 @@ export default function AutoDoor() {
                             <p>• <span>Цилиндрическая (360°) раздвижная дверь</span>: состоит из двух полуцилиндрических дверей, объединенных в единую конструкцию, и предоставляет дополнительное преимущество – является по своей сути законченным тамбуром с возможностью отсечения холодного воздуха даже при высоком потоке посетителей.</p>
                             <p>• <span>Индивидуальная радиусная раздвижная дверь</span>: геометрия двери (ее размеры, радиус и т.д.) задаются заказчиком в соответствии с дизайном входной группы.</p>
                         </div>
-                        <div>
-                            <img src={revolverDoor} alt='револьверные двери'/>
+                        <div className='type'>
+                            <div className='imageWrapper'><img src={revolverDoor} alt='револьверные двери'/></div>
                             <h4>револьверные двери</h4> 
-                            <img src={revolver1} alt='револьверные двери'/>
-                            <img src={revolver2} alt='револьверные двери'/>
+                            <div className='imageWrapper'><img src={revolver1} alt='револьверные двери'/></div>
+                            <div className='imageWrapper'><img src={revolver2} alt='револьверные двери'/></div>
                         </div>
-                        <div>
-                            <img src={gear} alt='приводы для распашных дверей'/>
+                        <div className='type'>
+                            <div className='imageWrapper'><img src={gear} alt='приводы для распашных дверей'/></div>
                             <h4>приводы для распашных дверей</h4>
 
                             <p>• <span>Подходят как для легких, так и для тяжелых створок. </span>

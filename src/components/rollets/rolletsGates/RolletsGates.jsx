@@ -39,12 +39,12 @@ export default function RolletsGates() {
                         {activeTab === 1 && 
                             <div className='content'>
                             <h3>Роллетные (рулонные) ворота</h3>
-                            <img src={rgtitle} alt='роллетные ворота'/>
+                            <div><img src={rgtitle} alt='роллетные ворота'/></div>
 
                             <h3>преимущества</h3>
                             <div className='plusWrapper'>
 
-                                <img src={rolletexp1} alt='роллетные ворота'/>
+                                <div className='imageContainer'><img src={rolletexp1} alt='роллетные ворота'/></div>
                                 <div>
                                 <h4>Экономия пространства</h4>
                                 <p>роллетные ворота могут быть установлены на любые проемы. Они позволяют экономить пространство под потолком и оптимальны для объектов, где подъезд к гаражу занимает небольшую территорию.</p>
@@ -61,7 +61,7 @@ export default function RolletsGates() {
                                 <h4>Стойкость к истиранию</h4>
                                 <p>Уникальное полиуретановое покрытие ПУР-ПА устойчиво к истиранию, царапинам и высокой влажности.</p>
                                 </div>
-                                <img src={rolletexp2} alt='роллетные ворота'/>
+                                <div className='imageContainer'><img src={rolletexp2} alt='роллетные ворота'/></div>
 
                             </div> 
 
@@ -93,13 +93,13 @@ export default function RolletsGates() {
                                 <div className='variantWrapper'>
                                     <div>
                                         <h4>Профили роликовой прокатки</h4>
-                                        <img src={rolik} alt='профиль роликовой прокатки'/>
+                                        <div><img src={rolik} alt='профиль роликовой прокатки'/></div>
                                         <p>цвета профиля AG/77 с мягким пенным наполнителем</p>
-                                        <img src={AG77} alt='AG/77 с мягким пенным наполнителем'/>
+                                        <div><img src={AG77} alt='AG/77 с мягким пенным наполнителем'/></div>
                                         <p>цвета профиля AG/77Н с твердым пенным наполнителем</p>
-                                        <img src={AG77H} alt='AG/77Н с твердым пенным наполнителем'/>
+                                        <div>   <img src={AG77H} alt='AG/77Н с твердым пенным наполнителем'/></div>
                                         <p>цвета профиля PD/77 с мягким пенным наполнителем</p>
-                                        <img src={PD77} alt='PD/77 с мягким пенным наполнителем'/> 
+                                        <div><img src={PD77} alt='PD/77 с мягким пенным наполнителем'/></div>
                                     </div>
                                     <div>
                                         <h4>Экструдированные профили</h4> 

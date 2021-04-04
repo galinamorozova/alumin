@@ -2,6 +2,7 @@
 
 .industrialGates {
 
+
     img {
         border: 1px solid rgb(189, 188, 188);
     }
@@ -17,6 +18,11 @@
 
     .content {
         text-align: left;
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
 
         h4 {
             font-family: $roboto-slab;
@@ -45,6 +51,10 @@
 
              .proTrend {
                  width: 75%;
+
+                 @media (max-width: 320px) {
+                    width: 100%;
+                }
              }
 
             h4 {
@@ -80,18 +90,39 @@
             grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
             grid-template-rows: 1fr;
             grid-gap: 1%;
+            
+            div {
+                display: flex;
+                justify-content: space-around;
+            }
+            img {
+                object-fit: cover;
+                object-position: center;
+                max-width: 15rem;
+                height: 15rem;
 
+                 @media (max-width: 320px) {
+                     height: 21rem;
+                }
+            }; 
+
+            div:last-of-type {
+
+                margin-bottom: 4rem;
                 img {
-                    object-fit: cover;
-                    object-position: center;
-                    max-width: 15rem;
-                    height: 15rem;
-                };   
+
+                    @media (max-width: 320px) {
+                        width: 14rem;
+                        height: 15rem;
+                   }
+                }
+            }
+
+                  
         };
 
         [alt='цветовая схема'] {
-           margin-top: 4rem;
-            max-width: 100%;
+            max-width: 100%; 
         };   
 
             .wicketWrapper {
@@ -100,6 +131,14 @@
                 grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
                 grid-template-rows: 1fr;
                 grid-gap: 1%;
+                justify-items: center;
+
+                @media (max-width: 992px) {
+                    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+                }
+                @media (max-width: 320px) {
+                    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+                }
 
 
                 div {
@@ -107,6 +146,12 @@
                 };
                 img {
                     width: 31rem;
+                    @media (max-width: 992px) {
+                        width: 29rem;
+                    }
+                    @media (max-width: 320px) {
+                        width: 25rem;
+                    }
                 }
             };
 
@@ -132,13 +177,16 @@
             };
     
 
-           .lockWrapper, .doorWrapper, .wetWrapper, .panoramWrapper, .vandalWrapper, .windowsWrapper {
+           .lockWrapper, .doorWrapper, .wetWrapper, .panoramWrapper, .vandalWrapper, .windowsWrapper, .surface, .design, .color, .base {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
             grid-template-rows: 1fr;
             justify-items: center;
             align-items: center;
+            justify-content: center;
+            align-content: center;
             grid-gap: 1%;
+            
 
                 img {
                     object-fit: cover;
@@ -154,6 +202,131 @@
                 }
 
            };
+           .windowsWrapper {
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+            }
+           }
+
+           .surface, .design, .base {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            @media (max-width: 320px) {
+               grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            }
+            p{
+                text-align: center;
+                @media (max-width: 320px) {
+                    font-size: 0.9rem;
+                 }
+            }
+            img {
+                height: 15rem;
+                margin: 1.5rem;
+                object-fit: cover;
+                @media (max-width: 320px) {
+                    margin: 1.5rem;
+                 }
+            }
+        }
+
+        .base  {
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        }
+
+        .surface {
+            [alt='под дерево'], [alt='stukko'] {
+                @media (max-width: 320px) {
+                    width: 15rem;
+                    margin: 0rem;
+                 }
+            }; 
+        }
+
+        
+
+        .color {
+
+            @media (max-width: 320px) {
+                grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+             }
+            img {
+                width: 10rem;
+                height: 10rem;
+                object-fit: cover;
+
+                @media (max-width: 320px) {
+                    width: 9rem;
+                    height: 9rem;
+                 }
+            }
+        }
+
+        .baseWrapper {
+            box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.4);
+            padding: 0.3rem;
+            margin-top: 3rem;
+
+            p{
+                @media (max-width: 320px) {
+                    font-size: 1.1rem;
+                    padding: 00.2rem;
+                 }
+            }
+            
+        };
+
+        .additionWrapper,.industrialDoorhan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-template-rows: 1fr;
+            grid-gap: 3%;
+            margin-bottom: 10rem;
+    
+            img {
+                width: 100%;
+            }
+
+            div {
+                border: 1px solid rgb(184, 184, 184);
+                box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+                background-color: #fff;
+            }
+    
+            p {
+                padding: 1rem;
+            }
+        };
+        .additionWrapper {
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+                grid-gap: 1%;
+            }
+            @media (max-width: 320px) {
+                grid-gap: 1.5rem;
+             }
+        }
+
+        .industrialDoorhan {
+            align-items: center;
+            border: 1px solid rgb(184, 184, 184);
+            box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
+            background-color: #fff;
+
+            @media (max-width: 320px) {
+                margin-bottom: 0rem;
+             }
+            
+            li {
+                padding: 1rem;
+            }
+        }
     };
    
 }

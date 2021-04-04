@@ -4,6 +4,12 @@
 
     padding: 2rem;
     //width: 60%;
+
+    @media (max-width: 320px) {
+        padding: 0;
+    }
+
+    
     
     img {
         width: 15rem;
@@ -35,6 +41,10 @@
         padding: 2rem;
         margin-top: 2rem;
         width: 70%;
+
+        @media (max-width: 320px) {
+            width: 100%;
+        }
     }
     
 }

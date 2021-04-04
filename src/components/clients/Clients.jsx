@@ -62,7 +62,7 @@ export default function Clients() {
               </div>
               <div className='clientName'>
                 <img src={politeh} alt='ВГТУ'/>
-                <p>Воронежскй государственный технический университет</p>
+                <p>Воронежский государственный технический университет</p>
               </div>
                 
               <p className='clientName'>и многие-многие другие</p>

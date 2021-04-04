@@ -16,6 +16,10 @@
         font-weight: bold;
         margin-top: 10rem;
 
+        // @media (max-width: 320px) {
+        //     margin-top: 15rem;
+        // }
+
     }
 
 
@@ -56,6 +60,10 @@
         justify-items: center;
         align-items: center;
 
+        @media (max-width: 320px) {
+            margin-bottom: 15rem;
+        }
+
         div > img {
             object-fit: cover;
             max-width: 100%;
@@ -82,21 +90,25 @@
 
         img {
             object-fit: cover;
-            height: 25rem;
-            width: 25rem;
+            width: 90%;
             border: 0;
+
+            @media (max-width: 320px) {
+                margin-bottom: -5rem;
+            }
+            
         }
     }
 
     .variantWrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
         grid-template-rows: 1fr;
         gap: 1%;
         justify-items: center;
 
         img {
-            width: 15rem;
+            width: 23rem;
             margin-top: 0.5rem;
             border: 0;
         }

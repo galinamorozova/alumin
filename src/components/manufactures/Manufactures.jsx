@@ -10,6 +10,7 @@ export default function Manufactures() {
     return(
         <section className="manufactures">
             <div className='container'>
+                <h3>Мы работаем со следующими производителями:</h3>
                 <div>
                     <img src={alutech_logo} alt='Alutech лого'/>
                     <h3>Alutech</h3>

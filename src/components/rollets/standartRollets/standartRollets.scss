@@ -34,41 +34,6 @@
     
     }
 
-    .buttonWrapper {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5rem;
-
-        button {
-            padding: 2rem;
-            font-family: $roboto-slab;
-            text-transform: uppercase;
-            border: 1.5px solid rgba(169, 169, 169, 0.2);
-            border-bottom: 1.5px solid #fbfbfb;
-            border-left: 1.5px solid #fbfbfb;
-            background-color: #fff;
-
-
-            &:hover, &:active, &:focus {
-            outline: none;
-            background-color: #fbfbfb;
-            font-weight: bold;
-            color: #43a906; 
-            };
-            
-        };
-
-
-    }
-
-    .content {
-        border: 2px solid #fbfbfb;
-        background-color: #fbfbfb;
-        box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
-        margin-bottom: 5rem;
-        font-family: $open-sans;
-        padding: 3rem 2rem;
-    }
  
     .titleImage {
         display: grid;
@@ -77,6 +42,13 @@
         grid-template-rows: 1fr;
         grid-gap: 1%;
         margin-bottom: 5rem;
+
+        @media (max-width: 1165px) {
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        }
+        @media (min-width: 768px) and (max-width: 908px) {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+         }
 
         img {
            object-fit: cover;
@@ -95,6 +67,14 @@
         box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
         padding: 0 1.5rem 1.5rem 1.5rem;
 
+        @media (max-width: 992px) {
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        }
+
+        @media (max-width: 320px) {
+            grid-gap: 0;
+        }
+
         img {
             grid-row: 1/4;
             object-fit: cover;
@@ -106,11 +86,16 @@
 
     .typeWrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-template-rows: 1fr;
         grid-gap: 2%;
         margin-bottom: 6rem;
         width: 100%;
+
+        @media (max-width: 320px) {
+            margin-bottom: 12rem;
+        }
+
         
 
          div {
@@ -128,6 +113,11 @@
                 text-align: center;
                 border-bottom: 1px solid #dfdfdf;
                 margin: 1.5rem 0 0 0;
+
+                @media (max-width: 320px) {
+                    height: 4rem;
+    
+                }
             }
 
             span {
@@ -139,7 +129,7 @@
 
     .controlWrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
         grid-template-rows: 1fr;
         gap: 1%;
         justify-items: center;

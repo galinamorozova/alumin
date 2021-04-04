@@ -2,7 +2,12 @@
 
 .barrier {
 
+    button {
     
+        @media (max-width: 325px) {
+            font-size: 1rem;
+        }
+    }
 
     h5 {
         text-transform: uppercase;
@@ -36,19 +41,26 @@
             margin: 2rem 0;
             text-align: justify;
         }
+
         li {
             text-align: left;
+            padding-bottom: 1rem;
         }
     }
 .bravoCharacteristics, .anMotorsCharacteristics, .barCharacteristics, .wideCharacteristics, .barrierProCharacteristics {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55% 45%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
 
     p {
         border-bottom: 1px solid rgb(211, 211, 211);
         padding: 1rem 0;
+
+        @media (max-width: 320px) {
+            border-bottom: none;
+            padding: 0.3rem;
+        }
     }
     
     }
@@ -60,14 +72,16 @@
     margin-bottom: 10rem;
 }
 
-.pluses {
+.plusesBarrier {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
-    margin-bottom: 7rem;
-    
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-rows: 1fr;
+
+    @media (min-width: 769px) and (max-width: 801px) {
+        grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+     }
 
     div {
-        width: 21rem;
         height: 15rem;
         border: 1.2px solid rgb(184, 184, 184);
         background-color:  white;
@@ -87,6 +101,11 @@
 
 ul {
     list-style: none;
+
+        @media (max-width: 320px) {
+            padding-left: 0;
+            margin-bottom: 5rem;
+        }
 }
 
 .niceBarrier {
@@ -95,6 +114,14 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
     grid-template-rows: 1fr;
     gap: 1%;
+
+    img {
+        @media (min-width: 768px) and (max-width: 835px) {
+            width: 23rem;
+         }
+    }
+
+    
 }
 
 

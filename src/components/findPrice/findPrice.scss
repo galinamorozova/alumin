@@ -7,15 +7,24 @@
         text-align: center;
         width: 60%;
         margin: 0 auto;
+
+        @media (max-width: 1024px) {
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem; 
+        }
     
     
     h2 {
             font-family: $roboto-slab;
-            font-size: 2em;
+            font-size: 2rem;
             color: #222222;
             text-transform: uppercase;
             font-weight: bold;
-            padding-bottom: 0.5em;
+            padding-bottom: 0.5rem;
+
+            @media (max-width: 1024px) {
+                font-size: 1.5rem;
+            }
     };
     button {
         padding: 1.5rem 5.2rem;
@@ -27,14 +36,20 @@
         text-transform: uppercase;
         color: #ffffff;
         cursor: pointer;
+
+
+        @media (max-width: 320px) {
+            padding: 1.5rem 3rem;
+        }
+        
     }
     [placeholder] {
         font-family: $open-sans;
-        font-size: 12px;
+        font-size: 1rem;
         font-style: italic;
         text-align: left;
         color: #696969;
-        padding-left: 10px;
+        padding-left: 0.5rem;
         min-width: 18rem;
 
     }
@@ -44,6 +59,7 @@
         flex-direction: column;
         width: 50%;
         margin: 0 auto;
+        align-items: center;
 
         input, textarea {
             margin-bottom: 1rem;

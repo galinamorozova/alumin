@@ -6,7 +6,7 @@ export default function SideMenu() {
 
     function showMenu (event) {
         let target = event.target;
-        let submenu = target.querySelectorAll('.submenu');
+        let submenu = target.querySelectorAll();
         let arrow = target.getElementsByClassName('fas fa-chevron-down');
         for (let i = 0; i < submenu.length; i++) {
             if (submenu[i].style.display === 'none') {

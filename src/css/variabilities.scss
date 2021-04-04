@@ -12,12 +12,37 @@ html, body, p, a, img {
     font-family: $open-sans, sans-serif;
     font-size: 14px;
     color: #393939;
+
+    @media (max-width: 1024px) {
+        font-size: 12px;  
+    }
+    @media (max-width: 768px) {
+        font-size: 11px;    
+    };
+    // @media (max-width: 500px) {
+    //     font-size: 10px;    
+    // };
+
 };
 
 .container {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0.7rem;
+
+    @media (max-width: 1024px) {
+        max-width: 1024px;  
+    };
+    @media (max-width: 992px) {
+        max-width: 970px;  
+    };
+    @media (max-width: 768px) {
+        max-width: 750px;  
+    };
+     @media (max-width: 325px) {
+         max-width: 320px;  
+     };
 };
 
 a {
@@ -29,7 +54,6 @@ h3 {
     text-transform: uppercase;
     font-family: $roboto-slab;
     font-weight: bold;
-   // margin-top: 7rem;
 }
 
 h4 {
@@ -57,6 +81,10 @@ span {
     justify-content: flex-start;
     margin-top: 5rem;
 
+    @media (max-width: 1024px) {
+        margin-top: 2rem;  
+    }
+
     button {
         padding: 2rem;
         font-family: $roboto-slab;
@@ -65,6 +93,10 @@ span {
         border-bottom: 1.5px solid #fbfbfb;
         border-left: 1.5px solid #fbfbfb;
         background-color: #fff;
+
+        @media (max-width: 325px) {
+            padding: 1rem; 
+        }
 
 
         &:hover, &:active, &:focus {
@@ -83,6 +115,10 @@ span {
     margin-bottom: 5rem;
     font-family: $open-sans;
     padding: 3rem 2rem;
+
+    @media (max-width: 325px) {
+        padding: 0.5rem;
+    }
 }
 
 

@@ -3,6 +3,7 @@
 .rolletsGrid {
 
     color: #393939;
+    box-sizing: border-box;
 
     h3 {
         text-transform: uppercase;
@@ -37,61 +38,51 @@
     
     }
 
-    .buttonWrapper {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5rem;
-
-        button {
-            padding: 2rem;
-            font-family: $roboto-slab;
-            text-transform: uppercase;
-            border: 1.5px solid rgba(169, 169, 169, 0.2);
-            border-bottom: 1.5px solid #fbfbfb;
-            border-left: 1.5px solid #fbfbfb;
-            background-color: #fff;
-
-
-            &:hover, &:active, &:focus {
-            outline: none;
-            background-color: #fbfbfb;
-            font-weight: bold;
-            color: #43a906; 
-            };
-            
-        };
-
-
-    }
-
-    .content {
-        border: 2px solid #fbfbfb;
-        background-color: #fbfbfb;
-        box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
-        margin-bottom: 5rem;
-        font-family: $open-sans;
-        padding: 3rem 1rem;
-    }
  
     .plusWrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
         grid-template-rows: 1fr;
-        background-color: white;
+         
+        @media (min-width: 768px) and (max-width: 940px) {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+              }
+        @media (max-width: 320px) {
+            justify-items: center;
+            }
        
         div {
-            padding: 4rem;
+           
+           width: 21rem;
+           height: 20rem;
             border: 1px solid rgb(184, 184, 184);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+
+             @media (min-width: 768px) and (max-width: 935px) {
+                 width: 17rem;
+                
+              }
         }
 
         h4 {
             font-size: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+           
+        }
+        p {
+            margin: 0 1rem;
+            text-align: justify;
         }
         img {
             object-fit: cover;
             width: 100%;
             height: 100%;
-            border: 1px solid rgb(184, 184, 184);
+            
         }
     }
 
@@ -126,6 +117,11 @@
         align-items: center;
         box-shadow: 0px 1px 3px 0 rgba(72, 72, 72, 0.2);
         padding: 1.5rem;
+
+        @media (max-width: 320px) {
+            grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+            grid-template-rows: 1fr;
+        }
         
 
         img {
@@ -139,6 +135,10 @@
         grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
         grid-template-rows: 1fr;
         grid-gap: 3%;
+
+        @media (max-width: 320px) {
+            grid-gap: 0%;
+        }
        
 
         div {

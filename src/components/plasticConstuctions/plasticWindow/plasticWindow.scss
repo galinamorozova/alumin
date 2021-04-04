@@ -6,6 +6,10 @@
     p {
         text-align: left;
         margin-top: 1rem;
+
+        @media (max-width: 320px) {
+            text-align: justify;
+        }
     }
 
     img[alt='ПВХ окна'] {
@@ -27,11 +31,30 @@
         grid-template-rows: 1fr;
         grid-gap:1%;
 
+        @media (min-width: 860px) and (max-width: 934px) {
+            grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+         }
+         @media (min-width: 768px) and (max-width: 859px) {
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+         }
+
+         @media (max-width: 320px) {
+            justify-items: center;
+            grid-gap: 0.5rem;
+        }
+        
+
         img {
             object-fit: cover;
             width: 10rem;
             height: 10rem;
             border: 1px solid grey;
+
+             @media (min-width: 860px) and (max-width: 895px) {
+                 width: 9rem;
+                 height: 9rem;
+              }
+           
         }
     }
 

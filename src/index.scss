@@ -1,8 +1,9 @@
 @import './css/variabilities.scss';
 
 //  header {
-//    // background-color:#fbfbfb;
-//  }
+//     background-color:rgba(218, 218, 218, 0.4);
+//     background-color: #fbfbfb;
+//   }
 
 .header-info {
     display: flex;
@@ -10,26 +11,42 @@
     align-items: center; 
     color: #646464;
 
+    @media (max-width: 500px) {
+        flex-direction: column;  
+        align-items:flex-end;
+        font-size: 10px; 
+    };
+
+    .fa-grip-lines-vertical {
+        @media (max-width: 320px) {
+            display: none;
+        };
+    }
+
     a {
-        font-size: 1.1em;
-        margin-right: 1em;
-        padding-top: 0.5em;
-        // padding-bottom: 0.5em;  
+        font-size: 1.1rem;
+        margin-right: 1rem;
+        padding-top: 0.5rem; 
         color: #646464;
+
+        @media (max-width: 500px) {
+            margin-right: 0;
+        };
     };
 
     i{
         color: rgb(213, 53, 85);
-        margin-right: 7px;
-        font-size: 16px;
+        margin-right: 0.6rem;
+        font-size: 1.1rem;
 
     
     };
 
     a + i {
         color: #c1bebe;
-        margin-left: 0.5em;
-        margin-right: 1em;
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+
     };
 
 

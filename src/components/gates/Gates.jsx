@@ -24,35 +24,35 @@ export default function Gates() {
                 
                 <div className='products'>
                     <NavLink className='product' to='/garage'>
-                        <img src={garazh} alt='Гаражные ворота'></img>
+                        <div><img src={garazh} alt='Гаражные ворота'/></div>
                         <p>гаражные ворота</p>
                     </NavLink>
                     <NavLink className='product' to='/industrial'>
-                        <img src={prom_vorota} alt='Промышленные ворота'/>
+                        <div><img src={prom_vorota} alt='Промышленные ворота'/></div>
                         <p>промышленные ворота</p>
                     </NavLink>
                     <NavLink className='product' to='/doubleLeaf'>
-                        <img src={raspash_vorota} alt='Распашные ворота'></img>
+                    <div><img src={raspash_vorota} alt='Распашные ворота'></img></div>
                         <p>въездные распашные ворота</p>
                     </NavLink>
                     <NavLink className='product' to='/sliding'>
-                        <img src={otkat_vorota} alt='Откатные ворота'></img>
+                    <div><img src={otkat_vorota} alt='Откатные ворота'></img></div>
                         <p>въездные откатные ворота</p>
                     </NavLink>
                      <NavLink className='product' to='/rolletsGates'>
-                        <img src={rolletGates} alt='Роллетные ворота'></img>
+                     <div><img src={rolletGates} alt='Роллетные ворота'></img></div>
                         <p>роллетные ворота</p>
                      </NavLink>
                      <NavLink className='product' to='/panoramic'>
-                        <img src={panoram_vorota} alt='Панорамные ворота'></img>
+                     <div><img src={panoram_vorota} alt='Панорамные ворота'></img></div>
                         <p>панорамные ворота</p>
                      </NavLink>
                      <NavLink className='product' to='/fast'>
-                        <img src={plenoch_vorota} alt='Скоростные ПВХ ворота'></img>
+                     <div><img src={plenoch_vorota} alt='Скоростные ПВХ ворота'></img></div>
                         <p>скоростные ворота</p>
                      </NavLink>
                      <NavLink className='product' to='/wicket'>
-                        <img src={otd_kalitka} alt='Отдельная калитка'></img>
+                     <div><img src={otd_kalitka} alt='Отдельная калитка'></img></div>
                         <p>отдельная калитка</p>
                      </NavLink>
                      

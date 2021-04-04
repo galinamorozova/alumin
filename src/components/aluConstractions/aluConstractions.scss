@@ -18,6 +18,23 @@
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-template-rows: 1fr;
         grid-gap: 3%;
+
+        @media (min-width: 768px) and (max-width: 841px) {
+            grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+            flex-basis: 100%;
+            grid-gap: 5%;
+         }
+         @media (max-width: 750px) {
+            flex-basis: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            justify-items: center;
+        }
+
+        @media (max-width: 750px) {
+           grid-gap: 12;
+           margin-bottom: 10rem;
+        }
+        
         
         
        
@@ -26,6 +43,10 @@
             border: 1px solid rgb(184, 184, 184);
             box-shadow: 3px 2px 7px 0px rgba(72, 72, 72, 0.2);
             background-color: #fff;
+
+            @media (max-width: 750px) {
+                width: 24rem;
+            }
         }
 
         p {

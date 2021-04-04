@@ -2,7 +2,11 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import './aluConstractions.scss';
 
-import wallTittle1 from '../../images/plastic/walltittle.jpeg';
+import aluFasade from '../../images/alumConstructions/aluFasade.jpeg';
+import aluminBalcony from '../../images/alumConstructions/aluminBalcony.jpeg';
+import alDoor from '../../images/alumConstructions/alDoor.jpeg';
+import alWindow from '../../images/alumConstructions/unstandartWindow.jpg';
+import alWall from '../../images/alumConstructions/wallTask.jpeg';
 
 
 import SideMenu from '../sideMenu/SideMenu';
@@ -17,23 +21,23 @@ export default function AluConstructions() {
 
                     <div className='products'>
                         <NavLink className='product' to='/aluFasade'>
-                            <img src={wallTittle1} alt='фасады'></img>
+                            <img src={aluFasade} alt='фасады'></img>
                             <p>Алюминиевые фасады</p>
                         </NavLink>
                         <NavLink className='product' to='/aluBalcony'>
-                            <img src={wallTittle1} alt='лоджии'></img>
+                            <img src={aluminBalcony} alt='лоджии'></img>
                             <p>Алюминиевые лоджии</p>
                         </NavLink>
                         <NavLink className='product' to='/aluDoor'>
-                            <img src={wallTittle1} alt='двери'></img>
+                            <img src={alDoor} alt='двери'></img>
                             <p>Алюминиевые двери</p>
                         </NavLink>
                         <NavLink className='product' to='/aluWindow'>
-                            <img src={wallTittle1} alt='окна'></img>
+                            <img src={alWindow} alt='окна'></img>
                             <p>Алюминиевые окна</p>
                         </NavLink>
                         <NavLink className='product' to='/aluWall'>
-                            <img src={wallTittle1} alt='перегородки'></img>
+                            <img src={alWall} alt='перегородки'></img>
                             <p>Алюминиевые перегородки</p>
                         </NavLink>
 

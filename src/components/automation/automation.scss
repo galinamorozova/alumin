@@ -22,10 +22,19 @@
         .button_content {
             flex-grow: 1;
         }
+
+        button {
+    
+            @media (max-width: 325px) {
+                font-size: 1rem;
+            }
+        }
+        
     
     }
 
     .content {
+       
        
 
         img[alt='titleAvtomatic'] {
@@ -45,6 +54,12 @@
             box-shadow: 0px 3px 7px 0 rgba(72, 72, 72, 0.2);
             padding: 1rem;
             margin-bottom: 3rem;
+
+            @media (max-width: 325px) {
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                grid-template-rows: 1fr;
+                gap: 0;
+            }
 
 
             p {
@@ -82,8 +97,96 @@
         .ambo, .asw {
             grid-template-rows: 1fr;
         }
-        
+        i {
+            color: #43a906;
+            font-size: 3rem;
+        }
+        i[alt='fas fa-hand-point-down'] {
+            margin-bottom: 2rem;
+        }
     }
- 
+.shel, .SPIN22BDKCE, .SPIN23BDKCE, .SN6041 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: 1fr;
+        grid-gap: 1%;
+        align-items: center;
+        text-align: left;
+        box-shadow: 0px 3px 7px 0 rgba(72, 72, 72, 0.2);
+        padding-right: 1rem;
+
+        @media (max-width: 320px) {
+            padding: 1rem;
+            text-align: center;
+        }
+        
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border: 1px solid #dedede;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+}
+.plus {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        grid-gap:14%;
+        margin: 5rem;
+
+        @media (max-width: 320px) {
+            grid-gap:0%;
+            margin: 0;
+            margin-top: 2rem;
+        }
+
+        
+}
+.longPlus {
+    grid-column: span 2;
+    background-color: rgba(201, 201, 201, 0.4);
+    padding-left: 1rem;
+    box-shadow: 0px 3px 7px 0 rgba(72, 72, 72, 0.2);
+    text-align: left;
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+     ul {
+
+         @media (max-width: 320px) {
+             padding-left: 0.5rem;
+         }
+
+         li {
+             padding-bottom: 1rem;
+         }
+       
+     }
+
+}
+
+.parametersShell, .parameters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(15, 1fr);
+    margin-bottom: 7rem;
+
+    // @media (min-width: 768px) and (max-width: 800px) {
+    //     margin-bottom: 2rem;
+    //  }
+
+    p{
+        border-bottom: 1px solid #c9c9c9;
+        padding: 0.4rem;
+    }
+    
+}
+.parameters {
+    grid-template-rows: repeat(12, 1fr);
+}
    
 }

@@ -8,6 +8,10 @@
     padding-right: 1rem;
     font-family: $roboto-slab;
 
+    @media (max-width: 750px) {
+        display: none;
+    }
+
     ul {
         margin-bottom: 1rem;
         list-style: none;

@@ -14,9 +14,28 @@
         margin: 10rem auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        grid-template-rows: 1fr;
         grid-gap: 3%;
         
+        @media (max-width: 1024px) {
+            margin: 5rem auto; 
+        }
+         @media (min-width: 768px) and (max-width: 841px) {
+            grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+            flex-basis: 100%;
+         }
+          @media (max-width: 750px) {
+             flex-basis: 100%;
+             grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+             justify-items: center;
+         }
+         @media (max-width: 320px) {
+            flex-basis: 100%;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-gap: 1%;
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+        }
+
         
        
 
@@ -25,10 +44,22 @@
             box-shadow: 3px 2px 7px 0px rgba(72, 72, 72, 0.2);
             background-color: #fff;
 
+            @media (max-width: 750px) {
+                width: 24rem;
+            }
+            @media (max-width: 320px) {
+                width: 20rem;
+            }
+
+
             img {
+                height: 15rem;
+                width: 100%;
                 object-fit: cover;
-                height: 14rem;
-                width: 100%;         
+                @media (max-width: 320px) {
+                    height: 10rem;
+                }
+                       
             }
         }
 
@@ -36,6 +67,10 @@
             font-family: $roboto-slab;
             text-transform: uppercase;
             padding: 1rem;
+
+            @media (max-width: 320px) {
+                padding: 0.5rem;
+            }
 
         }
     }

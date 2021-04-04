@@ -23,6 +23,10 @@
         margin-top: 5rem;
         font-family: $roboto-slab;
         font-weight: bold;
+
+        @media (max-width: 992px) {
+            margin-top: 1rem; 
+        }
     }
 
     h4 {
@@ -41,38 +45,9 @@
         }
     }
 
-    .buttonWrapper {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 5rem;
-
-        button {
-            padding: 2rem;
-            font-family: $roboto-slab;
-            text-transform: uppercase;
-            border: 1.5px solid rgba(169, 169, 169, 0.2);
-            border-bottom: 1.5px solid #fbfbfb;
-            border-left: 1.5px solid #fbfbfb;
-            background-color: #fff;
-
-            &:hover,
-            &:active,
-            &:focus {
-                outline: none;
-                background-color: #fbfbfb;
-                font-weight: bold;
-                color: #43a906;
-            }
-        }
-    }
 
     .content {
-        border: 2px solid #fbfbfb;
-        background-color: #fbfbfb;
-        box-shadow: 3px 3px 3px -3px rgba(155, 155, 155, 0.2);
-        margin-bottom: 5rem;
-        font-family: $open-sans;
-        padding: 3rem 2rem;
+        
 
         .plusWrapper {
             display: grid;
@@ -81,6 +56,10 @@
             gap: 3%;
             justify-items: center;
             align-items: center;
+
+            @media (max-width: 320px) {
+                gap: 0%;
+            }
 
             img {
                 object-fit: cover;
@@ -100,6 +79,12 @@
             gap: 2%;
             justify-items: center;
             margin-top: 6rem;
+
+            @media (max-width: 320px) {
+                gap: 0%;
+                margin-bottom: 5rem;
+                margin-top: 0;
+            }
 
             
                 img {
@@ -128,7 +113,7 @@
             }
     
             p {
-                padding-bottom: 2rem;
+                padding: 1rem;
             }
         }
     }

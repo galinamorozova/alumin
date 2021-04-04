@@ -99,7 +99,7 @@ export default function Barrier() {
                            
 
                                 <h3>Преимущества</h3>
-                                <div className='pluses'>
+                                <div className='plusesBarrier'>
                                     <div>
                                     <h5>Высокая интенсивность использования</h5>
                                     <p>Подходит для организации проезда с высокой интенсивностью движения</p>

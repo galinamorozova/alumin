@@ -6,6 +6,10 @@
     img {
         margin-bottom: 2rem;
         border: 1px solid rgb(186, 186, 186);
+
+        @media (max-width: 320px) {
+            margin-bottom: 0;
+        }
     }
 
     h3 {
@@ -48,10 +52,12 @@
             justify-items: center;
             align-items: center;
 
+            
+
             div > img {
                 object-fit: cover;
-                width: 20rem;
-                height: 100%;
+                max-width: 100%;
+                max-height: 100%;
             }
         }
 
@@ -71,12 +77,13 @@
 
         .variantWrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
             grid-template-rows: 1fr;
             gap: 1%;
+            
 
             img {
-                width: 15rem;
+                width: 23rem;
                 margin-top: 0.5rem;
                 border: 0;
             }
@@ -88,11 +95,15 @@
 
         .controlWrapper {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
             grid-template-rows: 1fr;
             gap: 1%;
             justify-items: center;
             align-items: center;
+            @media (max-width: 320px) {
+                grid-gap: 0;
+            }
+
 
             div > img {
                 object-fit: cover;

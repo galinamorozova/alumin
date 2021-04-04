@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,6 +9,8 @@ import {
 import './App.scss';
 import logo from './images/logo-2.png'
 
+import BurMenu from './components/BurgerMenu/BurMenu';
+import Burger from './components/BurgerMenu/Burger';
 import Products from './components/products/Products';
 import HowToOrder from './components/howToOrder/HowToOrder';
 import Manufactures from './components/manufactures/Manufactures';
@@ -56,20 +58,29 @@ import Fence3d from './components/fence/3d/Fence3d';
 import MetalFence from './components/fence/metalFence/MetalFence';
 import Picket from './components/fence/picket/Picket';
 
+
+
 function App() {
+
+  const [menuActive, setMenuActive] = useState(false);
+
   return (
     <div className="App">
     <Router>
      <div>
       <section className="titlePanel">
         <div className="container">
+        
+          <Burger active={menuActive} setActive={setMenuActive} /> 
+          <BurMenu active={menuActive} setActive={setMenuActive} />
+         
           <div className="logoButtons">
             <img src={logo} alt="лого"/>
 
             <div className="mainButtons">
               <NavLink to="/culc">калькулятор</NavLink>
-              <NavLink to="/measuring">заказать бесплатный замер</NavLink>
-              <NavLink to="/callback">заказать обратный звонок</NavLink> 
+              <NavLink to="/measuring">бесплатный замер</NavLink>
+              <NavLink to="/callback">обратный звонок</NavLink> 
             </div>
 
           </div>
@@ -78,7 +89,6 @@ function App() {
 
       <section className="navMenu">
         <div className="container">
-        
           <nav>
                   <NavLink className="nav-link" to="/products">Продукция</NavLink>
                   <NavLink className="nav-link" to="/howToOrder">Как заказать</NavLink>

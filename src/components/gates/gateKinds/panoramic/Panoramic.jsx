@@ -48,7 +48,7 @@ export default function Panoramic() {
                                 <p><i class="fas fa-award"/>Презентабельный внешний вид. Защита остекления от царапин и помутнения</p>
                                 <p><i class="fas fa-award"/>Широкий выбор решений по теплоизоляции</p>
                                 <p><i class="fas fa-award"/>Разнообразие цветовых решений - возможность подобрать ворота под любой экстерьер и в соответствии с фирменным стилем компании</p>
-
+                                <h3>виды</h3>
                                 <div className='typeWrapper'>
                                     <div>
                                         <img src={alutherm} alt='alutherm'/>
@@ -59,7 +59,6 @@ export default function Panoramic() {
                                         <p>Двойное или тройное остекление, альтернативное заполнение.<br/> <span>Максимальная теплоизоляция конструкции</span></p>
                                         <p>4 стандартных цвета</p>
                                     </div>
-                                
                                     <div>
                                         <img src={alupro} alt='alupro'/>
                                         <h4>AluPro</h4>	
@@ -109,49 +108,49 @@ export default function Panoramic() {
 
                                 <h3>Дополнительные аксессуары</h3>	
                                 <div className='additionWrapper'>
-                                    <div>
+                                    <div className='addition'>
+                                        <div><img src={wicket} alt='калитка'/></div>
                                         <h4>Встроенная калитка</h4>
-                                        <img src={wicket} alt='калитка'/>
                                         <p>для удобного и быстрого входа-выхода. Калитка экономит ресурс ворот, продлевая срок их службы</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'> 
+                                        <div><img src={antiDamage} alt='Покрытие, стойкое к царапинам'/></div>
                                         <h4>Покрытие, стойкое к царапинам</h4>
-                                        <img src={antiDamage} alt='Покрытие, стойкое к царапинам'/>
                                         <p>прозрачность остекления на долгие годы даже после многократной чистки</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'>
+                                        <div><img src={sideDoor} alt='Боковая дверь'/></div>
                                         <h4>Боковая дверь</h4>
-                                        <img src={sideDoor} alt='Боковая дверь'/>
                                         <p>для отдельного входа-выхода. Гармонично сочетается с воротами, придавая фасаду завершенный вид</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'>
+                                        <div><img src={fullfill} alt='Альтернативное заполнение секций'/></div>
                                         <h4>Альтернативное заполнение секций</h4>
-                                        <img src={fullfill} alt='Альтернативное заполнение секций'/>
                                         <p>решетчатое — для проветривания и регулировки влажности, композитное — для удобства ухода</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'>
+                                        <div><img src={rigel} alt='Ригельный замок'/></div>
                                         <h4>Ригельный замок</h4>
-                                        <img src={rigel} alt='Ригельный замок'/>
                                         <p>надежное запирание ворот изнутри и снаружи</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'>
+                                       <div><img src={wet} alt='Комплект для особо влажных помещений'/></div>
                                         <h4>Комплект для особо влажных помещений</h4>
-                                        <img src={wet} alt='Комплект для особо влажных помещений'/>
                                         <p>повышение стойкости к коррозии для сохранения вида и функциональности ворот в условиях влажного климата</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'>
+                                        <div><img src={warmAddition} alt='Двойной контур герметизации'/></div>
                                         <h4>Двойной контур герметизации</h4>
-                                        <img src={warmAddition} alt='Двойной контур герметизации'/>
                                         <p>для защиты от образования конденсата внутри светопрозрачных вставок</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'>
+                                        <div><img src={antipanic} alt='Замки «анти-паник»'/></div>
                                         <h4>Замки «анти-паник»</h4>
-                                        <img src={antipanic} alt='Замки «анти-паник»'/>
                                         <p>для эвакуации из помещений в экстренных ситуациях</p>
                                     </div>
-                                    <div>
+                                    <div className='addition'>
+                                        <div><img src={antiVandal} alt='Система защиты от поддомкрачивания'/></div>
                                         <h4>Система защиты от поддомкрачивания</h4>
-                                        <img src={antiVandal} alt='Система защиты от поддомкрачивания'/>
                                         <p>защита от проникновения злоумышленников</p>
                                     </div>
                                 </div>
