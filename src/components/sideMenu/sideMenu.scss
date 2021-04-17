@@ -30,7 +30,7 @@
             &:hover, &:active {
                 color: #43a906;
                 font-weight: 700;
-                letter-spacing: 1px;
+                //letter-spacing: 1px;
                 text-decoration: underline;
             };
 
@@ -59,28 +59,43 @@
     .menu_item {
         color: #393939;
         cursor: pointer;
-        margin-top: 0.5rem;
-        
+        margin-top: 1rem;
+
+        @media (max-width: 800px) {
+            margin-top: 1.3rem; 
+        };
     }
 
      .submenu_item {
         
         border-left: 3px solid #DDDDDD;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         margin-left: 1.5rem;
         padding-left: 1rem;
         text-transform: initial;
         transition-property: all;
         transition: 200ms;
+
+        @media (max-width: 800px) {
+            margin-top: 1.3rem; 
+        };
         
 
         &:hover, &:active, &:focus {
             color: #43a906;
             text-decoration: underline;
-            letter-spacing: 1px;
+            //letter-spacing: 1px;
         }
+        // &.gates.active {
+        //     display: none;
+        //     }
 
        
+    }
+    .submenu_item_gate, .submenu_item_rollet, .submenu_item_alCon, .submenu_item_plCon, .submenu_item_fence, .submenu_item_fire {
+        &.active {
+            display: none;
+            } 
     }
 
     & > ul:last-of-type > li {

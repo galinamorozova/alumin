@@ -15,10 +15,10 @@ export default function BurMenu({active, setActive}) {
                 <NavLink className='sub-link' to='/automation' onClick={() => setActive(!active) }> - автоматика</NavLink>
                 <NavLink className='sub-link' to='/barrier' onClick={() => setActive(!active) }> - шлагбаум</NavLink>
                 <NavLink className='sub-link' to='/rollets' onClick={() => setActive(!active) }> - роллеты/рольставни</NavLink>
-                <NavLink className='sub-link' to='/automaticDoor' onClick={() => setActive(!active) }> - автоматические двери</NavLink>
                 <NavLink className='sub-link' to='/aluConstructions' onClick={() => setActive(!active) }> - алюминиевые конструкции</NavLink>
                 <NavLink className='sub-link' to='/plasticConstructions' onClick={() => setActive(!active) }> - пластиковые конструкции</NavLink>
                 <NavLink className='sub-link' to='/fence' onClick={() => setActive(!active) }> - заборы</NavLink>
+                <NavLink className='sub-link' to='/automaticDoor' onClick={() => setActive(!active) }> - автоматические двери</NavLink>
                 <NavLink className='sub-link' to='/fence' onClick={() => setActive(!active) }> - противопожарное оборудование</NavLink>
                 <NavLink className='sub-link' to='/fence' onClick={() => setActive(!active) }> - перегрузочное оборудование</NavLink>
             </div>
