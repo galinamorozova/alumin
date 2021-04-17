@@ -13,7 +13,11 @@
         padding-bottom: 1rem; 
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 600px) {
+        width: 80%;
+    }
+
+    @media (max-width: 375px) {
         width: 100%;
     }
     

@@ -7,7 +7,7 @@
         text-align: left;
         margin-top: 1rem;
 
-        @media (max-width: 320px) {
+        @media (max-width: 375px) {
             text-align: justify;
         }
     }
@@ -17,14 +17,24 @@
     
     }
 
+    img[alt='door60'], img[alt='door70'] {
+             width: 25rem;
+             object-fit: contain;
+         }
+
     .colors, .doorTittle {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
         grid-template-rows: 1fr;
         grid-gap:1%;
 
-        @media (max-width: 320px) {
-            grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+        @media (max-width: 890px) {
+            grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+            justify-items: center;
+        }
+
+        @media (max-width: 590px) {
+            grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
             justify-items: center;
         }
 
@@ -34,7 +44,12 @@
             height: 10rem;
             border: 1px solid grey;
 
-            @media (max-width: 320px) {
+            @media (max-width: 890px) {
+                width: 17rem;
+                height: 15rem;
+            }
+
+            @media (max-width: 375px) {
                 width: 12rem;
                 height: 12rem;
             }
@@ -47,8 +62,13 @@
             width: 20rem;
             height: 20rem;
 
-            @media (max-width: 320px) {
-                width: 22rem;
+            @media (max-width: 890px) {
+                width: 17rem;
+                height: 15rem;
+            }
+
+            @media (max-width: 590px) {
+                width: 25rem;
                 height: 17rem;
             }
         }

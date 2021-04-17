@@ -60,7 +60,7 @@
         justify-items: center;
         align-items: center;
 
-        @media (max-width: 320px) {
+        @media (max-width: 375px) {
             margin-bottom: 15rem;
         }
 
@@ -78,6 +78,7 @@
         justify-items: center;
         align-items: center;
         gap: 1%;
+
         
 
         span {
@@ -93,7 +94,7 @@
             width: 90%;
             border: 0;
 
-            @media (max-width: 320px) {
+            @media (max-width: 550px) {
                 margin-bottom: -5rem;
             }
             

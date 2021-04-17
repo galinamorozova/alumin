@@ -342,22 +342,40 @@ export default function Garage() {
 
                                 <h4>Дизайн панелей</h4>
                                 <div className='design'>
+                                    <div>
                                     <img src={board} alt='панель снаружи'/>
+                                    <p>панель снаружи</p>
+                                    </div>
+                                    <div>
                                     <img src={stripePanel} alt='панель внутри'/>
+                                    <p>панель внутри</p>
+                                    </div>
                                 </div>
 
 
                                 <h4>Тип поверхностей</h4>
                                 <div className='surface'> 
+                                    <div>
                                     <img src={wood} alt='под дерево'/>
+                                    <p>под дерево</p>
+                                    </div>
+                                    <div>
                                     <img src={stukko} alt='stukko'/>
+                                    <p>stukko</p>
+                                    </div>
                                 </div>
                                 
 
                                 <h4>Цвета лицевых поверхностей</h4>  
                                 <div className='color'>  
+                                <div>
                                     <img src={whiteColor} alt='белый'/>
+                                    <p>белый</p>
+                                </div>
+                                <div>
                                     <img src={brownRed} alt='коричнево-красный'/>
+                                    <p>коричнево-красный</p>
+                                </div>
                                 </div>
 
                                 <div className='baseWrapper'>
@@ -402,38 +420,103 @@ export default function Garage() {
                                 </div>
                                 <h4>Дизайн панелей</h4>
                                 <div className='design'>
+                                <div>
                                     <img src={board} alt='доска'/>
+                                    <p>доска</p>
+                                </div>
+                                <div>
                                     <img src={stripePanel} alt='горизонтальная полоса'/>
+                                    <p>горизонтальная полоса</p>
+                                </div>
+                                <div>
                                     <img src={widePanel} alt='широкая центральная полоса'/>
+                                    <p>широкая центральная полоса</p>
+                                </div>
+                                <div>
                                     <img src={panel} alt='филенка'/>
+                                    <p>филенка</p>
+                                </div>
+                                <div>
                                     <img src={wavePanel} alt='волна'/>
+                                    <p>волна</p>
+                                </div>
+                                <div>
                                     <img src={stripePanel} alt='панель внутри'/>
+                                    <p>панель внутри</p>
+                                    </div>
                                 </div>
 
                                 <h4>Тип поверхностей</h4>
                                 <div className='surface'> 
+                                    <div>
                                     <img src={wood} alt='под дерево'/>
+                                    <p>под дерево</p>
+                                    </div>
+                                    <div>
                                     <img src={stukko} alt='stukko'/>
+                                    <p>stukko</p>
+                                    </div>
                                 </div>
 
 
                                 <h4>Цвета лицевых поверхностей</h4>  
-                                <div className='color'>   
+                                <div className='color'>
+                                    <div>   
                                     <img src={whiteColor} alt='белый'/>
-                                    <img src={brownRed} alt='коричнево-красный'/>
+                                    <p>белый</p>
+                                    </div>
+                                    <div>
                                     <img src={silver} alt='серебристый'/>
+                                    <p>серебристый</p>
+                                    </div>
+                                    <div>
                                     <img src={greyColor} alt='серый'/>
+                                    <p>серый</p>
+                                    </div>
+                                    <div>
                                     <img src={beige} alt='бежевый'/>
+                                    <p>бежевый</p>
+                                    </div>
+                                    <div>
                                     <img src={green} alt='зеленый'/>
+                                    <p>зеленый</p>
+                                    </div>
+                                    <div>
                                     <img src={blue} alt='синий'/>
+                                    <p>синий</p>
+                                    </div>
+                                    <div>
                                     <img src={antracit} alt='антрацит'/>
+                                    <p>антрацит</p>
+                                    </div>
+                                    <div>
                                     <img src={redColor} alt='красный'/>
+                                    <p>красный</p>
+                                    </div>
+                                    <div>
                                     <img src={bordo} alt='бордовый'/>
-                                    <img src={brownRed} alt='коричнево-красный'/>
+                                    <p>бордовый</p>
+                                    </div>
+                                    <div>
                                     <img src={brownColor} alt='коричневый'/>
+                                    <p>коричневый</p>
+                                    </div>
+                                    <div>
                                     <img src={goldenColor} alt='золотой дуб'/>
+                                    <p>золотой дуб</p>
+                                    </div>
+                                    <div>
                                     <img src={venge} alt='венге'/>
+                                    <p>венге</p>
+                                    </div>
+                                    <div>
                                     <img src={other} alt='нестандартный'/>
+                                    <p>нестандартный</p>
+                                    </div>
+                                    <div>
+                                    <img src={brownRed} alt='коричнево-красный'/>
+                                    <p>коричнево-красный</p>
+                                    </div>
                                 </div>
 
                                 <h4>Базовая комплектация</h4>

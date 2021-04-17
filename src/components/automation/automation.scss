@@ -25,8 +25,9 @@
 
         button {
     
-            @media (max-width: 325px) {
+            @media (max-width: 375px) {
                 font-size: 1rem;
+                padding: 0.9rem;
             }
         }
         
@@ -55,7 +56,7 @@
             padding: 1rem;
             margin-bottom: 3rem;
 
-            @media (max-width: 325px) {
+            @media (max-width: 490px) {
                 grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
                 grid-template-rows: 1fr;
                 gap: 0;
@@ -113,9 +114,9 @@
         align-items: center;
         text-align: left;
         box-shadow: 0px 3px 7px 0 rgba(72, 72, 72, 0.2);
-        padding-right: 1rem;
+        padding: 1rem;
 
-        @media (max-width: 320px) {
+        @media (max-width: 375px) {
             padding: 1rem;
             text-align: center;
         }
@@ -138,7 +139,7 @@
         grid-gap:14%;
         margin: 5rem;
 
-        @media (max-width: 320px) {
+        @media (max-width: 990px) {
             grid-gap:0%;
             margin: 0;
             margin-top: 2rem;
@@ -157,7 +158,7 @@
 
      ul {
 
-         @media (max-width: 320px) {
+         @media (max-width: 375px) {
              padding-left: 0.5rem;
          }
 

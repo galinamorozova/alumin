@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import './fence.scss';
 
-import wallTittle1 from '../../images/plastic/walltittle.jpeg';
+import wallTittle1 from '../../images/fence/tittle1.jpg';
 
 
 import SideMenu from '../sideMenu/SideMenu';

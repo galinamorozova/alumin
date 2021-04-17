@@ -7,17 +7,21 @@
         text-align: left;
         margin-top: 1rem;
 
-        @media (max-width: 320px) {
+        @media (max-width: 375px) {
             text-align: justify;
         }
     }
 
-    img[alt='ПВХ окна'] {
+    img[alt='ПВХ окна']  {
         object-fit: cover;
         width: 100%;
         height: 20rem;
         border: 1px solid grey;
     }
+
+    // img[alt='rehau grazio'], img[alt='rehau delight'] {
+    //     height: 25rem;
+    // }
 
     .menu_content{
         display: flex;
@@ -38,7 +42,7 @@
             grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
          }
 
-         @media (max-width: 320px) {
+         @media (max-width: 375px) {
             justify-items: center;
             grid-gap: 0.5rem;
         }

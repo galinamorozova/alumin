@@ -7,8 +7,8 @@ export default function footer() {
         <section className="footer">
             <div className="container">
                 <div className="footerWrapper">
-                    <div>
-                        <h3 className='mobileEmpty'>Контакты:</h3>
+                    <div className='mobileEmpty'>
+                        <h3>Контакты:</h3>
                     </div>
                     <div>
                         <a href="tel:+74732287672">+7 (473) 228-76-72</a>
@@ -34,14 +34,14 @@ export default function footer() {
                         <NavLink to="automaticDoor">автоматические двери</NavLink>
                         <p>перегрузочное оборудование</p>
                     </div>
-                    <div>
+                    <div className='mobileEmpty'>
                         <h3 className='mobileEmpty'>навигация по сайту:</h3>
                     </div>
                     <div className='footerNavigation'>
                         <NavLink to="/culc">калькулятор</NavLink><br/>
                         <NavLink to="/howToOrder">как заказать</NavLink><br/>
                         <NavLink to="/manufactures">производители</NavLink><br/>
-                        <NavLink to="/projects">наши обьекты</NavLink>
+                        <NavLink to="/projects">наши обьекты</NavLink><br/>
                         <NavLink to="/contact">напишите нам</NavLink>
                     </div>
                 </div>

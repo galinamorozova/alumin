@@ -19,7 +19,7 @@ export default function PlasticConstructions() {
 
                     <div className='products'>
                         <NavLink className='product' to='/plasticWindow'>
-                            <img src={windowTitle} alt='пвх окна'></img>
+                            <img src={windowTitle} alt='пвх окна'/>
                             <p>пвх окна</p>
                         </NavLink>
                         <NavLink className='product' to='/plasticDoor'>
