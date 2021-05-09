@@ -18,6 +18,12 @@
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-template-rows: 1fr;
         grid-gap: 3%;
+        &:hover {
+
+            p {
+                color: #43a906;
+            }
+          };
         
         
        

@@ -24,15 +24,15 @@ export default function footer() {
                         <NavLink to="gates">ворота</NavLink><br/>
                         <NavLink to="automation">автоматика</NavLink><br/>
                         <NavLink to="barrier">шлагбаумы</NavLink><br/>
-                        <p>заборы</p>
+                        <NavLink to="fence">заборы</NavLink><br/>
                         <NavLink to="rollets">роллеты/рольставни</NavLink>
                     </div>
                     <div className='mobileEmpty'>
                         <NavLink to="aluConstructions">алюминиевые конструкции</NavLink>
                         <NavLink to="plasticConstructions">пластиковые конструкции</NavLink>
-                        <p>противопожарное оборудование</p>
+                        <NavLink to='fireFight'>противопожарное оборудование</NavLink>
                         <NavLink to="automaticDoor">автоматические двери</NavLink>
-                        <p>перегрузочное оборудование</p>
+                        <NavLink to='handling'>перегрузочное оборудование</NavLink>
                     </div>
                     <div className='mobileEmpty'>
                         <h3 className='mobileEmpty'>навигация по сайту:</h3>
@@ -45,6 +45,7 @@ export default function footer() {
                         <NavLink to="/contact">напишите нам</NavLink>
                     </div>
                 </div>
+                <div className='authors'>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>, <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/authors/xnimrodx" title="xnimrodx">xnimrodx</a> and <a href="https://www.flaticon.com/authors/ultimatearm" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
             </div>
         </section>
     );

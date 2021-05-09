@@ -18,6 +18,7 @@
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-template-rows: 1fr;
         grid-gap: 3%;
+        
 
         @media (max-width: 841px) and (min-width: 751px) {
             grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); 
@@ -28,6 +29,13 @@
             border: 1px solid rgb(184, 184, 184);
             box-shadow: 3px 2px 7px 0px rgba(72, 72, 72, 0.2);
             background-color: #fff;
+
+            &:hover {
+
+                p {
+                    color: #43a906;
+                }
+              };
         }
 
         p {

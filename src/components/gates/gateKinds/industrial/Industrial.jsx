@@ -76,8 +76,7 @@ export default function Industrial() {
                     <div className='button_content'>
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
-                            <button onClick={() => setActiveTab(2)}>dorhan</button>
-                            <button onClick={() => setActiveTab(3)}>hermann</button>
+                            <button onClick={() => setActiveTab(2)}>doorhan</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
@@ -406,12 +405,7 @@ export default function Industrial() {
                                 </div>
                             </div>
                         }
-                        {activeTab === 3 && 
-                            <div className='content'>контент3</div>
-                        }
                     </div>
-                    
-
                 </div>
             </div>
         </section>

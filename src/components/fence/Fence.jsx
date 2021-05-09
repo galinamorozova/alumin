@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import './fence.scss';
 
 import wallTittle1 from '../../images/fence/tittle1.jpg';
+import picketTitle from '../../images/fence/picketTitle.jpg';
 
 
 import SideMenu from '../sideMenu/SideMenu';
@@ -21,14 +22,10 @@ export default function Fence() {
                             <p>3d сетка</p>
                         </NavLink>
                         <NavLink className='product' to='/picket'>
-                            <img src={wallTittle1} alt='из евроштакетника'></img>
+                            <img src={picketTitle} alt='из евроштакетника'></img>
                             <p>Заборы из евроштакетника</p>
                         </NavLink>
-                        <NavLink className='product' to='/metalFence'>
-                            <img src={wallTittle1} alt='из профильного листа'></img>
-                            <p>Заборы из профильного листа</p>
-                        </NavLink>
-                        </div>
+                    </div>
 
 
                 </div> 

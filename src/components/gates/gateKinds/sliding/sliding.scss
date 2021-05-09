@@ -14,7 +14,7 @@
         text-decoration: underline;
         size: 3rem;
         font-weight: bold;
-        margin-top: 10rem;
+        //margin-top: 10rem;
 
         // @media (max-width: 320px) {
         //     margin-top: 15rem;
@@ -44,13 +44,15 @@
     
     }
 
-    img[alt='откатные ворота'] {
+    img[alt='откатные ворота'], img[alt='откатные ворота Дорхан'] {
         width: 100%;
         margin-bottom: 1rem;
+        object-fit: cover;
     }
     img[alt='цвета']{
         width: 70%;
     }
+    
 
     .plusWrapper {
         display: grid;
@@ -59,6 +61,7 @@
         gap: 1%;
         justify-items: center;
         align-items: center;
+        margin-bottom: 7rem;
 
         @media (max-width: 375px) {
             margin-bottom: 15rem;
@@ -132,6 +135,78 @@
         }
     }
 
+ .characteristics {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr;
+     justify-items: center;
+     
+
+     p {
+        padding: 1rem;
+        border-bottom: 1.5px solid rgb(194, 187, 187);
+     }
+ }
+
+ .design, .surface, .shield, .premium, .color {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    margin-bottom: 7rem;
+
+    @media (max-width: 500px) {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+     }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 20rem;
+
+        @media (max-width: 1100px) {
+           width: 17rem;
+        }
+        @media (max-width: 800px) {
+            width: 15rem;
+         }
+         @media (max-width: 600px) {
+            width: 22rem;
+         }
+    }
+
+    img {
+        width: 100%;
+        object-fit: fill;
+    }
+ }
+
+ .design {
+     img {
+         width: 15rem;
+     }
+ }
+
+ .shield {
+
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+
+    div: {
+        width: 25rem;
+    };
+
+    img {
+        height: 14rem;
+        width: 25rem;
+        object-fit: cover;
+    }
+ }
+
  
+
    
 }

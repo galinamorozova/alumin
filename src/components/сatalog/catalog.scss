@@ -3,7 +3,7 @@
 
 
 .catalogWrapper {
-    padding: 7rem 0;
+    padding: 3rem 0 7rem 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -12,16 +12,7 @@
         padding: 1rem 0; 
         padding-top: 0;
     }
-    
 
-    img {
-        width: 5rem;
-
-        // @media (max-width: 320px) {
-        //     width: 4rem; 
-          
-        // };
-    };
 
     .catalogProduct {
         width: 15rem;
@@ -35,14 +26,31 @@
             padding: 2.7rem 0; 
         };
 
+        &:hover {
+
+            svg {
+                fill: #43a906;
+            }
+
+            p {
+                color: #43a906;
+            }
+          };
+
     }
+
+    svg {
+        width: 6rem;
+        height: 6rem ;
+        fill:#393939;
+    }
+    
 
     p {
         font: 1rem $roboto-slab;
         text-transform: uppercase;
         color: #646464;
         font-weight: 700;
-       
     }
 }
 

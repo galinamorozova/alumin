@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import './App.scss';
-import logo from './images/logo-2.png'
+import logo from './images/logo.png'
 
 import BurMenu from './components/BurgerMenu/BurMenu';
 import Burger from './components/BurgerMenu/Burger';
@@ -55,8 +55,9 @@ import AluWall from './components/aluConstractions/aluWall/AluWall';
 
 import Fence from './components/fence/Fence';
 import Fence3d from './components/fence/3d/Fence3d';
-import MetalFence from './components/fence/metalFence/MetalFence';
 import Picket from './components/fence/picket/Picket';
+import FireFight from './components/fireFight/FireFight';
+import Handling from './components/handling/Handling';
 
 
 
@@ -208,14 +209,17 @@ function App() {
             <Route path="/3d">
               <Fence3d />
             </Route>
-            <Route path="/metalFence">
-              <MetalFence />
-            </Route>
             <Route path="/picket">
               <Picket />
             </Route>
             <Route path="/automaticDoor">
               <AutoDoor />
+            </Route>
+            <Route path="/fireFight">
+              <FireFight />
+            </Route>
+            <Route path="/handling">
+              <Handling />
             </Route>
             <Route path="/">
               <Products />

@@ -82,8 +82,6 @@ export default function SideMenu() {
             <NavLink to='/3d'>3D-сетка</NavLink></li>
             <li className={ fenceMenuActive ? 'submenu_item_fence active' : 'submenu_item'}>
             <NavLink to='/picket'>из евроштакетника</NavLink></li>
-            <li className={ fenceMenuActive ? 'submenu_item_fence active' : 'submenu_item'}>
-            <NavLink to='/metalFence'>из профильного листа</NavLink></li>
         </ul>
     </li>
     <li className='menu_item'> 

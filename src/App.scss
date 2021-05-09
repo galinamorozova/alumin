@@ -46,10 +46,10 @@
     };    
 
     img {
-        max-width: 25rem;
+        max-width: 20rem;
 
-        @media (max-width: 320px) {
-          max-width: 20rem;
+        @media (max-width: 450px) {
+          max-width: 22rem;
           //margin-top: 1.5rem;
       };
     };
@@ -97,7 +97,7 @@
       border-bottom: 5px solid #43a906;
       color: #43a906;
     };
-    &:hover {
+    &:hover, &:focus  {
       color: #43a906;
     };
     

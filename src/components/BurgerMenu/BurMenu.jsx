@@ -19,8 +19,8 @@ export default function BurMenu({active, setActive}) {
                 <NavLink className='sub-link' to='/plasticConstructions' onClick={() => setActive(!active) }> - пластиковые конструкции</NavLink>
                 <NavLink className='sub-link' to='/fence' onClick={() => setActive(!active) }> - заборы</NavLink>
                 <NavLink className='sub-link' to='/automaticDoor' onClick={() => setActive(!active) }> - автоматические двери</NavLink>
-                <NavLink className='sub-link' to='/fence' onClick={() => setActive(!active) }> - противопожарное оборудование</NavLink>
-                <NavLink className='sub-link' to='/fence' onClick={() => setActive(!active) }> - перегрузочное оборудование</NavLink>
+                <NavLink className='sub-link' to='/fireFight' onClick={() => setActive(!active) }> - противопожарное оборудование</NavLink>
+                <NavLink className='sub-link' to='/handling' onClick={() => setActive(!active) }> - перегрузочное оборудование</NavLink>
             </div>
             <NavLink className='burger-link' to="/howToOrder" onClick={() => setActive(!active) }>как заказать</NavLink>
             <NavLink className='burger-link' to="/manufactures" onClick={() => setActive(!active) }>производители</NavLink>

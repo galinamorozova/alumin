@@ -52,6 +52,11 @@
             width: 100%;
             height: 100%;
         }
+        img[alt='панорамные Doorhan'] {
+            object-fit: cover;
+            width: 100%;
+            height: 20rem;
+        }
         i {
             color: #43a906;
             font-size: 1.3rem;
@@ -122,63 +127,72 @@
                 
             }
         }
-        .additionWrapper {
-            margin: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-            grid-template-rows: 1fr;
-            gap: 1%;
-            justify-items: center;
-
-            @media (max-width: 1137px) {
-                grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); 
-                gap: 1%;
-            }
-             @media (min-width: 768px) and (max-width: 900px) {
-                 grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); 
-             }
-             @media (min-width: 400px) and (max-width: 767px) {
-                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
-                grid-gap: 1rem;
-            }
-             @media (max-width: 375px) {
-                margin-bottom: 3rem;
-                grid-gap: 1rem;
-            }
-
-            .addition {
-                width: 20rem;
-                height: 100%;
-                background-color: #fff;
-                border: 1px solid rgb(186, 186, 186);
-
-                @media (min-width: 801px) and (max-width: 991px) {
-                    width: 16rem; 
-                }
-                @media (min-width: 768px) and (max-width: 800px) {
-                    width: 15rem; 
-                }
-                
-            }
-            div {
-                height: 14rem;
-                @media (min-width: 768px) and (max-width: 800px) {
-                    height: 11.5rem;
-                }
-            }
-
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                border: 1px solid rgb(186, 186, 186);
-            }
-            p {
-                margin: 2rem;
-            }
-        }
     
     }
- 
+    .addition {
+        img{
+            width: 100%;
+            height: 20rem;
+            object-fit: fill;
+
+            @media (max-width: 570px) {
+                height: 30rem;
+            }
+            @media (max-width: 490px) {
+                height: 20rem;
+            }
+        }
+    }
+    .characteristics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        margin-bottom: 7rem;
+        
    
+        p {
+            margin: 1rem 0;
+           border-bottom: 1.5px solid rgb(194, 187, 187);
+        }
+    }
+    .design, .surface, .color, .panels, .glass {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: 1fr;
+        gap: 1rem;
+        justify-items: center;
+        margin-bottom: 7rem;
+        @media (max-width: 500px) {
+            grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+         }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 20rem;
+            @media (max-width: 1100px) {
+                width: 17rem;
+             }
+             @media (max-width: 800px) {
+                 width: 15rem;
+              }
+              @media (max-width: 600px) {
+                 width: 22rem;
+              }
+        }
+        img {
+            width: 15rem;
+            object-fit: fill;
+        }
+    }
+    
+    .panels {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        div {
+            width: 12rem;
+        }
+    }
 }

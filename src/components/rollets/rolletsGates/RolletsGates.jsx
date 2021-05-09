@@ -19,6 +19,39 @@ import AG77H from '../../../images/rollet/AG77H.png';
 import AG77 from '../../../images/rollet/AG77.png';
 import extrud from '../../../images/rollet/extrud.png';
 
+import RH75 from '../../../images/doorhan/rh75.jpg';
+import RH77M from '../../../images/doorhan/rh77.jpg';
+import rh77mDesign from '../../../images/doorhan/RH77M.jpg';
+import rhs75Design from '../../../images/doorhan/RHS75.jpg';
+import rhs75pDesign from '../../../images/doorhan/RHS75P.jpg';
+import whiteColor from '../../../images/doorhan/9003.png';
+import greyColor from '../../../images/doorhan/7004.png';
+import silver from '../../../images/doorhan/9006.png';
+import brownColor from '../../../images/doorhan/8014.png';
+import blue from '../../../images/doorhan/5005.png';
+import green from '../../../images/doorhan/6005.png';
+import antracit from '../../../images/doorhan/7016.png';
+import beige from '../../../images/doorhan/1014.png';
+import bordo from '../../../images/doorhan/3005.png';
+import darkOak from '../../../images/doorhan/darkOak.jpg';
+import golden from '../../../images/doorhan/golden.png';
+import engine from '../../../images/doorhan/engine.jpg';
+import canvasEnd from '../../../images/doorhan/canvasEnd.jpg';
+import box from '../../../images/doorhan/box.jpg';
+import rails from '../../../images/doorhan/rails.jpg';
+import canvas from '../../../images/doorhan/canvas.jpg';
+import dhre from '../../../images/doorhan/dhre.jpg';
+import cv from '../../../images/doorhan/CV01.jpg';
+import rolletPhoto from '../../../images/doorhan/rolletPhoto.jpg';
+import smartroll from '../../../images/doorhan/smartroll.jpg';
+import swm from '../../../images/doorhan/SWM.jpg';
+import gsm from '../../../images/doorhan/gsm.jpg';
+import swb from '../../../images/doorhan/SWB.jpg';
+import rolletTransmitter from '../../../images/doorhan/rolletTransmitter.jpg';
+import transmitter4 from '../../../images/doorhan/Transmitter4.jpg';
+import wifiModule from '../../../images/doorhan/Wi-Fi.jpg';
+import lampa from '../../../images/doorhan/lampa.jpg';
+
 export default function RolletsGates() {
 
     const [activeTab, setActiveTab] = useState(1);
@@ -34,7 +67,6 @@ export default function RolletsGates() {
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
-                            <button onClick={() => setActiveTab(3)}>hoermann</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
@@ -144,11 +176,169 @@ export default function RolletsGates() {
                             </div>
                         }
                         {activeTab === 2 && 
-                            <div className='content'>контент2</div>
+                        <div className='content'>
+                            <h4>РОЛЛЕТНЫЕ ВОРОТА ДОРХАН</h4>
+                            <div className='rolletGates'>
+                                <img src={RH75} alt='роллетные ворота'/>
+                                <div className='gateView'>
+                                    <h4>РОЛЬВОРОТА ИЗ СТАЛЬНОГО ПРОФИЛЯ(ВЗЛОМОУСТОЙЧИВЫЕ) RHS75, RHS75P</h4>
+                                    <div className='characteristics'>
+                                        <p>Ширина проема, мм</p>
+                                        <p>от 1 000 до 4 000</p>
+                                        <p>Высота проема, мм</p>
+                                        <p>от 1 000 до 4 000</p>
+                                        <p>Притолока, мм</p>
+                                        <p>от 300 (накладной монтаж)</p>
+                                        <p>Пристенки, мм</p>
+                                        <p>от 90 (накладной монтаж)</p>
+                                        <p>Максимальная площадь полотна, м²</p>
+                                        <p>16</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='rolletGates'>
+                                <img src={RH77M} alt='роллетные ворота'/>
+                                <div className='gateView'>
+                                <h4>УЛИЧНЫЕ И ГАРАЖНЫЕ РОЛЬВОРОТА ИЗ ПЕНОЗАПОЛНЕННОГО ПРОФИЛЯ RH77M</h4>
+                                    <div className='characteristics'>
+                                        <p>Ширина проема, мм</p>
+                                        <p>от 1 000 до 5 200</p>
+                                        <p>Высота проема, мм</p>
+                                        <p>от 1 000 до 4 500</p>
+                                        <p>Притолока, мм</p>
+                                        <p>от 250 (накладной монтаж)</p>
+                                        <p>Пристенки, мм</p>
+                                        <p>от 83 (накладной монтаж)</p>
+                                        <p>Максимальная площадь полотна, м²</p>
+                                        <p>18</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='rolletDesign'>
+                                <div>
+                                    <h4>ВОРОТА ВЗЛОМОУСТОЙЧИВЫЕ RHS75, RHS75P</h4>
+                                    <div>
+                                        <img src={rhs75Design} alt='RHS75'/>
+                                        <p>RHS75</p>
+                                    </div>
+                                    <div>
+                                        <img src={rhs75pDesign} alt='RHS75P'/>
+                                        <p>RHS75P</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4>ВОРОТА ИЗ ПЕНОЗАПОЛНЕННОГО ПРОФИЛЯ RH77M</h4>
+                                    <div>
+                                        <img src={rh77mDesign} alt='RH77M'/>
+                                        <p>RH77M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>ЦВЕТА ВЗЛОМОУСТОЙЧИВЫХ ВОРОТ и ВОРОТ ИЗ ПЕНАЗАПОЛНЕННОГО ПРОФИЛЯ:</h4>
+                            <div className='color'>   
+                                <img src={whiteColor} alt='белый'/>
+                                <img src={brownColor} alt='коричневый'/>
+                                <img src={greyColor} alt='серый'/>
+                                <img src={beige} alt='бежевый'/>
+                                <img src={blue} alt='синий'/>
+                                <img src={green} alt='зеленый'/>
+                                <img src={bordo} alt='бордовый'/>
+                                <img src={silver} alt='серебристый'/>
+                                <img src={antracit} alt='антрацит'/>
+                            </div>
+                            <div className='additionalColor'>
+                                <div>
+                                    <h4>ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ВЗЛОМОУСТОЙЧИВЫХ ВОРОТ:</h4>
+                                    <img src={greyColor} alt='серый'/>
+                                    <p>оцинкованный</p>
+                                </div>
+                                <div>
+                                    <h4>ДОПОЛНИТЕЛЬНЫЕ ЦВЕТА ВОРОТ ИЗ ПЕНАЗАПОЛНЕННОГО ПРОФИЛЯ:</h4>
+                                    <img src={golden} alt='серый'/>
+                                    <p>golden oak</p>
+                                    <img src={darkOak} alt='серый'/>
+                                    <p>dark oak</p>
+                                </div>
+                            </div>
+                            <h4>БАЗОВАЯ КОМПЛЕКТАЦИЯ</h4>
+                            <div className='baseWrapper'>
+                                <div className='base'>
+                                    <img src={box} alt='Короб'/>
+                                    <p>Короб в сборе. Представляет собой собранный защитный короб с боковыми крышками, валом и капсулами, механизмом управления.</p>
+                                </div>
+                                <div className='base'>
+                                    <img src={canvas} alt='Полотно'/>
+                                    <div>
+                                        <p>ВЛОМОУСТОЙЧИВЫЕ ВОРОТА - Полотно в сборе. Полотно из стального профиля с боковыми замками, предотвращающими расхождение профиля. Полотно может быть комбинированным — из сплошного и перфорированного профиля.</p>
+                                        <p>ВОРОТА ИЗ ПЕНАЗАПОЛНЕННОГО ПРОФИЛЯ - Полотно в сборе. Полотно из пенозаполненного профиля с боковыми замками, предотвращающими расхождение профиля.</p>
+                                    </div>
+                                </div>
+                                <div className='base'>
+                                    <img src={canvasEnd} alt='Концевой профиль'/>
+                                    <p>Концевой профиль с уплотнителем. В концевой профиль могут быть установлены запирающие механизмы.</p>
+                                </div>
+                                <div className='base'>
+                                    <img src={rails} alt='Комплект направляющих профилей'/>
+                                    <p>Комплект направляющих профилей с уплотнителем. Большой выбор стандартных и усиленных направляющих позволяет подобрать профили для роллетных систем, устанавливаемых на проемах любых размеров, с учетом ветровых нагрузок и требований по взломостойкости.</p>
+                                </div>
+                                <div className='base'>
+                                    <img src={engine} alt='Привод'/>
+                                    <div>
+                                        <p>ВЛОМОУСТОЙЧИВЫЕ ВОРОТА - Электропривод внутривальный.</p>
+                                        <p>ВОРОТА ИЗ ПЕНАЗАПОЛНЕННОГО ПРОФИЛЯ - Ручной или автоматический электропривод.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ</h4>
+                            <div className='additionWrapper'>
+                                <div>
+                                    <img src={swb} alt='Выключатель клавишный SWB'/>
+                                    <p>Выключатель клавишный SWB</p>
+                                </div>
+                                <div>
+                                    <img src={swm} alt='Ключ-кнопка SWM'/>
+                                    <p>Ключ-кнопка SWM для подачи управляющей команды на блок управления электропривода с помощью поворота ключа</p>
+                                </div>
+                                <div>
+                                    <img src={cv} alt='Блок управления CV01'/>
+                                    <p>Блок управления CV01 для осуществления возможности дистанционного управления одной роллетой или группой роллет</p>
+                                </div>
+                                <div>
+                                    <img src={smartroll} alt='Блок управления SmartRoll'/>
+                                    <p>Блок управления SmartRoll для дистанционного управления внутривальными электроприводами роллет с помощью пультов DoorHan</p>
+                                </div>
+                                <div>
+                                    <img src={dhre} alt='Внешний радиоприемник DHRE-1'/>
+                                    <p>Внешний радиоприемник DHRE-1 для управления автоматикой других производителей с помощью пульта DoorHan</p>
+                                </div>
+                                <div>
+                                    <img src={gsm} alt='GSM-модуль'/>
+                                    <p>GSM-модуль для приема сигнала с мобильного телефона и передачи управляющей команды для запуска электропривода</p>
+                                </div>
+                                <div>
+                                    <img src={rolletTransmitter} alt='Пульт для дистанционного управления'/>
+                                    <p>Пульт для дистанционного управления</p>
+                                </div>
+                                <div>
+                                    <img src={rolletPhoto} alt='Фотоэлементы'/>
+                                    <p>Фотоэлементы безопасности Photocell-N, состоящие из инфракрасного передатчика и приемника</p>
+                                </div>
+                                <div>
+                                    <img src={wifiModule} alt='Wi-Fi-модуль'/>
+                                    <p>Только для ВОРОТ ИЗ ПЕНАЗАПОЛНЕННОГО ПРОФИЛЯ -  Wi-Fi-модуль для беспроводного управления (выработки сигнала управления, NO) электроприводами</p>
+                                </div>
+                                <div>
+                                    <img src={transmitter4} alt='пульт'/>
+                                    <p>Только для ВОРОТ ИЗ ПЕНАЗАПОЛНЕННОГО ПРОФИЛЯ - Пульт Transmitter-4 для дистанционного управления 4 автоматическими устройствами</p>
+                                </div>
+                                <div>
+                                    <img src={lampa} alt='светодиодная лампа'/>
+                                    <p>Только для ВОРОТ ИЗ ПЕНАЗАПОЛНЕННОГО ПРОФИЛЯ - Сигнальная светодиодная лампа с антенной Lamp-PRO</p>
+                                </div>
+                            </div>
+                        </div>
                         }
-                        {activeTab === 3 && 
-                            <div className='content'>контент3</div>
-                        }
+
                     </div>
                     
 

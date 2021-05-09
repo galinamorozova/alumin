@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { NavLink } from 'react-router-dom';
 import './automation.scss';
 import SideMenu from '../../components/sideMenu/SideMenu';
 
@@ -9,9 +10,37 @@ import roteo from '../../images/avtomation/roteo.png';
 import scopio from '../../images/avtomation/scopio.png';
 import targo from '../../images/avtomation/targo.png';
 import asw from '../../images/avtomation/asw.png';
+import garazh from '../../images/garazh_vorota.jpg';
 
 import niceShel from '../../images/avtomation/niceshel.png';
 import niceSpin from '../../images/avtomation/nicespin.jpeg';
+
+import sectional800 from '../../images/doorhan/sectional800.jpg';
+import sectional1200 from '../../images/doorhan/sectional1200.jpg';
+import shaft from '../../images/doorhan/shaft.jpg';
+import sliding from '../../images/doorhan/sliding.jpg';
+import swing from '../../images/doorhan/swing.jpg';
+import swingPro from '../../images/doorhan/swingpro.jpg';
+import arm from '../../images/doorhan/arm.jpg';
+import gsm from '../../images/doorhan/gsm.jpg';
+import wifiModule from '../../images/doorhan/Wi-Fi.jpg';
+import dhre from '../../images/doorhan/dhre.jpg';
+import lampa from '../../images/doorhan/lampa.jpg';
+import rolletPhoto from '../../images/doorhan/rolletPhoto.jpg';
+import rolletTransmitter from '../../images/doorhan/rolletTransmitter.jpg';
+import transmitter4 from '../../images/doorhan/Transmitter4.jpg';
+import keySafe from '../../images/doorhan/keySafe.jpg';
+import lock from '../../images/doorhan/lock.jpg';
+import lock2 from '../../images/doorhan/lock2.jpg';
+import domophone from '../../images/doorhan/domofon.jpg';
+import photocell2 from '../../images/doorhan/photocell2.jpg';
+import codeKey from '../../images/doorhan/codeKey.jpg';
+import trafficLight from '../../images/doorhan/trafficLight.jpg';
+import antenna from '../../images/doorhan/antenna.jpg';
+import keyPad from '../../images/doorhan/keyPad.jpg';
+import fingerprint from '../../images/doorhan/fingerprint.jpg';
+
+
 
 
 export default function Automation() {
@@ -35,7 +64,7 @@ export default function Automation() {
                         {activeTab === 1 && 
                             <div className='content'>
                                 <img src={titleAvtomatic} alt='titleAvtomatic'/>
-                                <h2>Автоматика для гаражных ворот</h2>
+                                <h2>Автоматика для гаражных ворот АЛЮТЕХ</h2>
                                 <div className='speedLevigato'>
                                     <div>
                                         <img src={levigato} alt='скоростной привод levigato'/>
@@ -156,8 +185,7 @@ export default function Automation() {
                         }
                         {activeTab === 2 && 
                             <div className='content'>
-                            <img src={titleAvtomatic} alt='titleAvtomatic'/>
-                            <h2>Автоматика для гаражных ворот</h2>
+                            <h2>Автоматика для гаражных ворот НАЙС</h2>
                                 <div className='shel'>
                                     <img src={niceShel} alt='shel75'/>
                                     <div>
@@ -316,7 +344,266 @@ export default function Automation() {
                             </div>
                         }
                         {activeTab === 3 && 
-                            <div className='content'>контент3</div>
+                            <div className='content'>
+                                <h2>Автоматика для гаражных ворот ДОРХАН - потолочные приводы:</h2>
+                                <div className='sectional'>
+                                    <img src={sectional800} alt='привод sectional'/>
+                                    <div>
+                                        <h3>Потолочный привод SECTIONAL-800PRO и SECTIONAL-800PRO</h3>
+                                        <div className='characteristics'>
+                                            <p>Максимальный вес полотна ворот, кг</p>
+                                            <p>150/180</p>
+                                            <p>Напряжение питания, В</p>
+                                            <p>220–240</p>
+                                            <p>Режим ожидания, Вт</p>
+                                            <p>6</p>
+                                            <p>Усилие, Н</p>
+                                            <p>800/1000</p>
+                                            <p>Электродвигатель</p>
+                                            <p>пошaговый (импульсный)</p>
+                                            <p>Двигатель, В</p>
+                                            <p>24В DC</p>
+                                            <p>Скорость открывания, м/мин</p>
+                                            <p>6</p>
+                                            <p>Диапазон рабочих температур, °С</p>
+                                            <p>-20...+55</p>
+                                            <p>Предохранители</p>
+                                            <p>питание 2,5 А</p>
+                                            <p>Передача движения</p>
+                                            <p>цепь/ремень</p>
+                                            <p>Класс защиты IP</p>
+                                            <p>IP 20</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='sectional1200'>
+                                    <img src={sectional1200} alt='привод sectional'/>
+                                    <div>
+                                        <h3>Потолочный привод SECTIONAL-1200</h3>
+                                        <div className='characteristics'>
+                                            <p>Максимальный вес полотна ворот, кг</p>
+                                            <p>220</p>
+                                            <p>Напряжение питания, В</p>
+                                            <p>220–240</p>
+                                            <p>Усилие, Н</p>
+                                            <p>1200</p>
+                                            <p>Двигатель, В</p>
+                                            <p>24 DC</p>
+                                            <p>Скорость открывания, м/мин</p>
+                                            <p>6</p>
+                                            <p>Диапазон рабочих температур, °С</p>
+                                            <p>-20...+55</p>
+                                            <p>Интенсивность использования, %</p>
+                                            <p>50 %</p>
+                                            <p>Класс защиты IP</p>
+                                            <p>IP 20</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>Автоматика для промышленных ворот ДОРХАН - вальные приводы:</h2>
+                                <div className='shaft'>
+                                    <img src={shaft} alt='привод shaft'/>
+                                    <div>
+                                        <h3>Вальный привод SHAFT-20, SHAFT-30-60, SHAFT-50, SHAFT-50PRO, SHAFT-120-200</h3>
+                                        <div className='characteristics'>
+                                            <p>Максимальный вес полотна ворот, кг</p>
+                                            <p>от 160 до 850</p>
+                                            <p>Напряжение питания, В</p>
+                                            <p>220–240 / 380-340</p>
+                                            <p>Крутящий момент, Нм</p>
+                                            <p>от 20 до 60</p>
+                                            <p>Мощность, Вт</p>
+                                            <p>от 300 до 800</p>
+                                            <p>Диапазон рабочих температур, °С</p>
+                                            <p>-40...+55</p>
+                                            <p>Скорость вращения мотора, об/мин</p>
+                                            <p>1 400</p>
+                                            <p>Класс защиты IP</p>
+                                            <p>от IP 20 до IP54</p>
+                                            <p>Интенсивность использования, %</p>
+                                            <p>от 40 до 65</p>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>Автоматика для откатных ворот ДОРХАН:</h2>
+                                <div className='sliding'>
+                                    <img src={sliding} alt='привод sliding'/>
+                                    <div>
+                                        <h3>Привод SLIDING-500-800, SLIDING-800PRO, SLIDING-1300-2100PRO, SLIDING-5000</h3>
+                                        <div className='characteristics'>
+                                            <p>Максимальный вес полотна ворот, кг</p>
+                                            <p>от 500 до 5000</p>
+                                            <p>Напряжение питания, В</p>
+                                            <p>220–240</p>
+                                            <p>Максимальное усилие, Н</p>
+                                            <p>220–1350</p>
+                                            <p>Крутящий момент, Нм</p>
+                                            <p>от 16 до 43</p>
+                                            <p>Мощность, Вт</p>
+                                            <p>от 260 до 1500</p>
+                                            <p>Диапазон рабочих температур, °С</p>
+                                            <p>-40...+55</p>
+                                            <p>Скорость открывания, м/мин</p>
+                                            <p>от 10 до 12</p>
+                                            <p>Класс защиты IP</p>
+                                            <p>IP54</p>
+                                            <p>Интенсивность использования, %</p>
+                                            <p>от 50 до 100</p>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>Автоматика для распашных ворот ДОРХАН:</h2>
+                                <div className='swing'>
+                                    <img src={swing} alt='привод swing'/>
+                                    <div>
+                                        <h3>Линейный привод SWING-4000-BASE и SWING-24</h3>
+                                        <div className='characteristics'>
+                                            <p>Максимальная длина створки, м</p>
+                                            <p>4</p>
+                                            <p>Напряжение питания, В</p>
+                                            <p>220–240</p>
+                                            <p>Максимальный вес створки, кг</p>
+                                            <p>от 200 до 400</p>
+                                            <p>Мощность, Вт</p>
+                                            <p>от 100 до 140</p>
+                                            <p>Диапазон рабочих температур, °С</p>
+                                            <p>-20...+55</p>
+                                            <p>Класс защиты IP</p>
+                                            <p>от IP44 до IP54</p>
+                                            <p>Интенсивность использования, %</p>
+                                            <p>от 50 до 100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='swingPro'>
+                                    <img src={swingPro} alt='привод swingPro'/>
+                                    <div>
+                                        <h3>Линейный привод SWING-3000PRO и SWING-5000PRO</h3>
+                                        <div className='characteristics'>
+                                            <p>Максимальная длина створки, м</p>
+                                            <p>от 3 до 5</p>
+                                            <p>Напряжение питания, В</p>
+                                            <p>220–240</p>
+                                            <p>Максимальный вес створки, кг</p>
+                                            <p>от 400 до 500</p>
+                                            <p>Мощность, Вт</p>
+                                            <p>150</p>
+                                            <p>Скорость открывания, м/мин</p>
+                                            <p>0,9</p>
+                                            <p>Диапазон рабочих температур, °С</p>
+                                            <p>-40...+55</p>
+                                            <p>Класс защиты IP</p>
+                                            <p>54</p>
+                                            <p>Интенсивность использования, %</p>
+                                            <p>от 50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='arm'>
+                                    <img src={arm} alt='привод arm'/>
+                                    <div>
+                                        <h3>Рычажный привод ARM-230 и ARM-320PRO</h3>
+                                        <div className='characteristics'>
+                                            <p>Максимальная длина створки, м</p>
+                                            <p>от 1,5 до 2</p>
+                                            <p>Напряжение питания, В</p>
+                                            <p>220–240</p>
+                                            <p>Максимальный вес створки, кг</p>
+                                            <p>от 300 до 400</p>
+                                            <p>Мощность, Вт</p>
+                                            <p>от 120 до 300</p>
+                                            <p>Диапазон рабочих температур, °С</p>
+                                            <p>-40...+55</p>
+                                            <p>Скорость открывания, м/мин</p>
+                                            <p>0,78</p>
+                                            <p>Класс защиты IP</p>
+                                            <p>44</p>
+                                            <p>Интенсивность использования, %</p>
+                                            <p>от 30 до 100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ</h4>
+                            <div className='additionWrapper'>
+                                <div>
+                                    <img src={gsm} alt='GSM-модуль'/>
+                                    <p>GSM-модуль 3.0 GSM-модуль предназначен для приема сигнала с мобильного телефона и дистанционной передачи команд (тип контактов NO, NC) для управления шлагбаумами, приводами, системами освещения и другими типами электрооборудования.</p>
+                                </div>
+                                <div>
+                                    <img src={wifiModule} alt='Wi-Fi-модуль'/>
+                                    <p>Wi-Fi-модуль Smartcontrol-2 предназначен для беспроводного управления (выработки сигнала управления NO) электроприводами.</p>
+                                </div>
+                                <div>
+                                    <img src={dhre} alt='Внешний радиоприемник DHRE-1'/>
+                                    <p>Внешний радиоприемник DHRE-1 для управления автоматикой других производителей с помощью пульта DoorHan</p>
+                                </div>
+                                <div>
+                                    <img src={antenna} alt='АНТЕННА 433 MHZ'/>
+                                    <p>Антенна Antena-433 создана для увеличения дальности приема сигнала с пультов дистанционного управления. Кронштейн крепления антенны мобилен и удобен при монтаже.</p>
+                                </div>
+                                <div>
+                                    <img src={rolletPhoto} alt='Фотоэлементы'/>
+                                    <p>Фотоэлементы — это устройство безопасности, состоящее из инфракрасного передатчика и приемника, которые устанавливаются в проем ворот. В случае пересечения инфракрасного луча в блок управления поступает сигнал о появлении препятствия в опасной зоне действия автоматической системы, и система вырабатывает реакцию, соответствующую установленной логике работы — остановка или реверс полотна ворот.</p>
+                                </div>
+                                <div>
+                                    <img src={photocell2} alt='Фотоэлементы'/>
+                                    <p>Фотоэлементы беспроводные Photocell-PRO — устройство безопасности, состоящее из инфракрасного передатчика и приемника, которые устанавливаются в проем ворот. В случае пересечения инфракрасного луча в блок управления поступает сигнал о появлении препятствия в опасной зоне действия автоматической системы, и система вырабатывает реакцию, соответствующую установленной логике работы — остановка или реверс полотна ворот. Поворотная плата позволяет монтировать фотоэлемент на неровных поверхностях.</p>
+                                </div>
+                                <div>
+                                    <img src={lampa} alt='светодиодная лампа'/>
+                                    <p>Сигнальная лампа LAMP PRO – устройство безопасности. Предупреждает о начале движения ворот и работает в течение всего цикла их движения.</p>
+                                </div>
+                                <div>
+                                    <img src={trafficLight} alt='CВЕТОФОР'/>
+                                    <p>CВЕТОФОР TRAFFICLIGHT-LED Предназначен для использования с автоматическими устройствами, ограничивающими доступ на стоянках, автомойках, в гаражных комплексах, подземных и многоуровневых паркингах. Применение данного светофора позволяет повысить безопасность движения транспортных средств при въезде/выезде на огороженной территории, а также существенно снизить энергопотребление.</p>
+                                </div>
+                                <div>
+                                    <img src={keyPad} alt='Радиокодовая клавиатура KeyPad'/>
+                                    <p>Радиокодовая беспроводная клавиатура KeyPad, совместимая с встроенным и внешним приемниками DoorHan, позволяет дистанционно управлять приводами DoorHan.</p>
+                                </div>
+                                <div>
+                                    <img src={codeKey} alt='АНТИВАНДАЛЬНАЯ КОДОВАЯ КЛАВИАТУРА KEYCODE'/>
+                                    <p>АНТИВАНДАЛЬНАЯ КОДОВАЯ КЛАВИАТУРА KEYCODE редназначена для управления автоматическими ограждающими конструкциями посредством прокси-карт и/или ПИН-кода.</p>
+                                </div>
+                                <div>
+                                    <img src={fingerprint} alt='КОДОВАЯ КЛАВИАТУРА KEYFREM СО ВСТРОЕННЫМ СЧИТЫВАТЕЛЕМ ОТПЕЧАТКОВ ПАЛЬЦЕВ И КАРТ'/>
+                                    <p>КОДОВАЯ КЛАВИАТУРА KEYFREM СО ВСТРОЕННЫМ СЧИТЫВАТЕЛЕМ ОТПЕЧАТКОВ ПАЛЬЦЕВ И КАРТ. KEYFREM — это автономный контроллер, оснащенный встроенным считывателем отпечатков пальцев, проксимити-карт и брелоков формата Em-Marine (арт. CARD EM, TRINKET EM) и клавиатурой для идентификации по коду. Клавиатура KEYFREM предназначена для управления одним устройством (шлагбаумом, электроприводом ворот или роллет, электрозамком и т. д.), а также может быть использована как внешняя клавишная панель или устройство считывания карт и отпечатков пальцев.</p>
+                                </div>
+                                <div>
+                                    <img src={rolletTransmitter} alt='Пульт для дистанционного управления'/>
+                                    <p>Пульт для дистанционного управления</p>
+                                </div>
+                                <div>
+                                    <img src={transmitter4} alt='пульт'/>
+                                    <p>Пульт Transmitter-4 для дистанционного управления 4 автоматическими устройствами</p>
+                                </div>
+                                <div>
+                                    <img src={domophone} alt='КОМПЛЕКТ ВИДЕОДОМОФОНА DOMO7-PRO С ЭКРАНОМ 7'/>
+                                    <p>Цветной видеодомофон Domo7-PRO используется для круглосуточного контроля доступа, вызовов, открывания дверей и ворот, обеспечения безопасности коттеджей, дач, домов, гостиниц, офисов и других объектов.</p>
+                                </div>
+                                <div>
+                                    <img src={lock} alt='КОМПЛЕКТ ЗАМКА ЭЛЕКТРОМЕХАНИЧЕСКОГО DH-LOCK-KIT'/>
+                                    <p>КОМПЛЕКТ ЗАМКА ЭЛЕКТРОМЕХАНИЧЕСКОГО DH-LOCK-KIT. Замок открывается ключом или пультом управления, обладает надежной защитой и высоким уровнем безопасности. Предназначен для калиток с электроприводами, системами контроля доступа и домофонами. Замок может устанавливаться в жилых, офисных и производственных зданиях, складах, гостиницах, общественных учреждениях и т. д.</p>
+                                </div>
+                                <div>
+                                    <img src={lock2} alt='ЗАЩЕЛКА ЭЛЕКТРОМЕХАНИЧЕСКАЯ'/>
+                                    <p>Электромеханическая защелка Estrike является ответной частью замка и устанавливается в дверную раму отдельно стоящих калиток. Устройство избавляет от необходимости установки кабелепрохода и переходников, а также сводит к минимуму требования к гибкости и прочности кабеля. Защелку можно использовать с любыми системами контроля доступа.</p>
+                                </div>
+                                <div>
+                                    <img src={keySafe} alt='СЕЙФ КОДОВЫЙ ДЛЯ КЛЮЧЕЙ'/>
+                                    <p>Устройство Safecode предназначено для хранения ключей расцепителей приводов для ворот, замков роллет, шлагбаумов и других автоматических систем.</p>
+                                </div>
+                            </div>
+                        </div>
+                        }
+                        {activeTab === 4 && 
+                            <div className='content'>
+                                <p>Наша компания реализует автоматику HOERMANN, поставляемую в комплектах готовых ворот.</p>
+                                <p>C этой автоматикой Вы можете ознакомиться в соответствующем разделе:</p>
+                                <NavLink className='hoermann' to='/garage'>
+                                    <div><img src={garazh} alt='Гаражные ворота'/><p>гаражные ворота</p></div>
+                                </NavLink>
+                            </div>
                         }
                     </div>
                     
