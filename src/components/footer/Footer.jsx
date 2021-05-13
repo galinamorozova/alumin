@@ -11,11 +11,12 @@ export default function footer() {
                         <h3>Контакты:</h3>
                     </div>
                     <div>
-                        <a href="tel:+74732287672">+7 (473) 228-76-72</a>
+                        <a href="tel:+74732287672">+7 (473) 228-76-72</a><br/>
+                        <a href="tel:+79081428392">+7 (908) 142-83-92</a>
                         <p>2287672@mail.ru</p>
                         <p>alyumin.servis@mail.ru</p>
                         <p>г.Воронеж, Московский пр-т, 11И, оф. 18</p>
-                        <p className='mobileEmpty'>График работы: пн-пт 9.00-18.00</p>
+                       
                     </div>
                     <div className="footerProducts">
                         <h3>продукция:</h3>

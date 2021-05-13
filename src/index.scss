@@ -1,17 +1,12 @@
 @import './css/variabilities.scss';
 
-//  header {
-//     background-color:rgba(218, 218, 218, 0.4);
-//     background-color: #fbfbfb;
-//   }
-
 .header-info {
     display: flex;
     justify-content: flex-end;
-    align-items: center; 
+    align-items: flex-end; 
     color: #646464;
 
-    @media (max-width: 500px) {
+    @media (max-width: 750px) {
         flex-direction: column;  
         align-items:flex-end;
         font-size: 10px; 
@@ -19,38 +14,41 @@
 
     .fa-grip-lines-vertical {
         color: #43a906;
-        @media (max-width: 320px) {
+        margin-right: 1rem;
+        @media (max-width: 750px) {
             display: none;
         };
     }
 
     a {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-right: 1rem;
         padding-top: 0.5rem; 
         color: #646464;
-
-        @media (max-width: 500px) {
-            margin-right: 0;
+        font-family: $roboto-slab;
+        @media (max-width: 360px) {
+            font-size: 1rem;
+            margin-right: 0.2rem;
         };
     };
 
     i{
         color: rgb(213, 53, 85);
-        margin-right: 0.6rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
 
-    
+        @media (max-width: 360px) {
+            font-size: 1rem;
+        };
     };
-
-    a + i {
-        color: #c1bebe;
-        margin-left: 0.5rem;
-        margin-right: 1rem;
-
-    };
-
-
+   
+    span {
+        @media (max-width: 750px) {
+            margin-right: 1rem;
+        };
+        @media (max-width: 360px) {
+            margin-right: 0.2rem;
+        };
+    }
 }
 
 

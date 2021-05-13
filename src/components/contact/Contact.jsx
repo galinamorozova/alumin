@@ -35,6 +35,8 @@ export default function Contact() {
                             <span>Воронеж, Московский пр-т, 11И, оф. 18</span> <br/>
                             <i className="fas fa-mobile-alt"></i>
                             <a href="tel:+74732287672">+7 (473) 228-76-72</a><br/>
+                            <i className="fas fa-mobile-alt"></i>
+                            <a href="tel:+79081428392">+7 (908) 142-83-92</a><br/>
                             <i className="fas fa-envelope mail"></i>
                             <span className='mail'>2287672@mail.ru</span>
                             <i className="fas fa-envelope mail"></i>
