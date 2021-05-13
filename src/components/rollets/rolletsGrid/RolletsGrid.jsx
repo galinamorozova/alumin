@@ -48,6 +48,12 @@ import transmitter4 from '../../../images/doorhan/Transmitter4.jpg';
 import wifiModule from '../../../images/doorhan/Wi-Fi.jpg';
 import lampa from '../../../images/doorhan/lampa.jpg';
 
+import steelPerf from '../../../images/steel/steelPerf.jpg';
+import perfGrid from '../../../images/steel/perfGrid.jpg';
+import p60p from '../../../images/steel/p60p.jpg';
+import p75p from '../../../images/steel/p75p.jpg';
+import p105p from '../../../images/steel/p105p.jpg';
+
 
 
 
@@ -66,10 +72,11 @@ export default function RolletsGrid() {
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
+                            <button onClick={() => setActiveTab(3)}>стальные</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
-                                <h3>роллетные решетки</h3>
+                                <h3>роллетные решетки ALUTECH</h3>
                                 <img src={titleGrid} alt='ролетные решетки'/>
                                 <h3>преимущества</h3>
                                 <div className='plusWrapper'>
@@ -365,6 +372,142 @@ export default function RolletsGrid() {
                                 </div>
                             </div>
                         </div>
+                        }
+                        {activeTab === 3 && 
+                            <div className='content'>
+                                <h4>СТАЛЬНЫЕ РОЛЛЕТНЫЕ РЕШЕТКИ</h4>
+                                <div className='steelPlus'>
+                                    <img src={steelPerf} alt="стальные решетки"/>
+                                    <div>
+                                        <h4>Преимущества стальных роллетных систем</h4>
+                                        <div>
+                                            <li>Стальный профиль предполагает бОльшую противовзломную защиту за счет прочности самого материала (стали) по сравнению с более "мягкими" металлами. 
+                                            Особенности конструкции роллет в сочетании со свойствами стали дают существенный антивандальный и противовзломный эффект. Чтобы их "вскрыть" - потребуется не один час.</li>
+                                            <li>Роллеты из стали обладают улучшенными противопожарными свойствами, поскольку сталь - материал негорючий.</li>
+                                            <li>Стальные рольставни и ворота изготовляются из оцинкованной холоднокатаной стали 0,8–1,2 мм методом роликовой прокатки, гибки в валках</li>
+                                            <li>Изделия обрабатываются качественной порошковой покраской с отличными защитными свойствами</li>
+                                        </div>
+                                    </div>   
+                                </div>
+                                <div className='steelGrid'>
+                                    <div>
+                                        <h4>Сфера применения стальных роллетных решеток</h4>
+                                        <div>
+                                            <li>Стальный перфорированный профиль активно используется в частных квартирах, домах на окнах, балконах и дверях. 
+                                            Перфорированный профиль обладает таким же запасом прочности, но дополнительно еще и улучшенными солярными свойствами, поскольку частично пропускают свет!</li>
+                                            <li>В нежилых помещениях перфорированные роллеты также активно применяются в качестве перегородок в офисах, складах, оформляют входную группу или оконные проемы в бутиках и салонах красоты, большинство торговых центров, спортивных объектов, кинотеатров и т.д.</li>
+                                            <li>Перфорированные роллеты можно использовать для оформления беседок, террас, в качестве вентеляционного элемента в перегородках и т.п.</li>
+                                        </div>
+                                    </div>
+                                    <img src={perfGrid} alt="стальные решетки"/>   
+                                </div>
+                            <h4>Виды профиля</h4>
+                            <div className='steelDesign'>
+                                <div>
+                                    <p>Профиль 60П</p>
+                                    <img src={p60p} alt=''/>
+                                </div>
+                                <div>
+                                    <p>Профиль 75П</p>
+                                    <img src={p75p} alt=''/>
+                                </div>
+                                <div>
+                                    <p>Профиль 105П</p>
+                                    <img src={p105p} alt=''/>
+                                </div>
+                            </div>
+                            <h4>СТАНДАРТНЫЕ ЦВЕТА ОКРАСКИ:</h4>
+                            <p> Внимание! Цвета на экране Вашего монитора могут не совпадать с истинным цветом изделий. Ориентируйтесь на кодовые обозначения по палитре RAL.</p>
+                            <div className='steelColor'>
+                                <div>
+                                    <div className='ral r9006'/>
+                                    <p>RAL 9006 (алюм-металлик)</p>
+                                </div>
+                                <div>
+                                <div className='ral r9016'/>
+                                    <p>RAL 9016 (стандартный белый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r9010'/>
+                                    <p>RAL 9010 (молочно-белый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r1015'/>
+                                    <p>RAL 1015 (стандартный бежевый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r1001'/>
+                                    <p>RAL 1001 (тяжелый бежевый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r7035'/>
+                                    <p>RAL 7035 (стандартный серый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r7004'/>
+                                    <p>RAL 7004 (тяжелый серый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r5003'/>
+                                    <p>RAL 5003 (темно синий)</p>
+                                </div>
+                                <div>
+                                <div className='ral r6005'/>
+                                    <p>RAL 6005 (темно зеленый)</p>
+                                </div>
+                                <div>
+                                    <div className='ral r7047'/>
+                                    <p>RAL 7047 (светло-серый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r5017'/>
+                                    <p>RAL 5017 (стандартный синий)</p>
+                                </div>
+                                <div>
+                                <div className='ral r8017'/>
+                                    <p>RAL 8017 (коричневый шоколад)</p>
+                                </div>
+                                <div>
+                                <div className='ral r8014'/>
+                                    <p>RAL 8014 (стандартный коричневый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r6029'/>
+                                    <p>RAL 6029 (стандартный зеленый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r3005'/>
+                                    <p>RAL 3005 (вишня)</p>
+                                </div>
+                                <div>
+                                <div className='ral r3002'/>
+                                    <p>RAL 3002 (стандартный красный)</p>
+                                </div>
+                                <div>
+                                <div className='ral r1018'/>
+                                    <p>RAL 1018 (стандартно желтый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r9005'/>
+                                    <p>RAL 9005 (стандартно черный)</p>
+                                </div>
+                            </div>
+                            <h4>ВАРИАНТЫ УПРАВЛЕНИЯ РОЛЛЕТНОЙ СИСТЕМОЙ:</h4>
+                            <div className='steelControl'>
+                                <div>
+                                    <img src={swb} alt='управление'/>
+                                    <p>клавишный переключатель</p>
+                                </div>
+                                <div>
+                                    <img src={swm} alt='управление'/>
+                                    <p>замковый переключатель</p>
+                                </div>
+                                <div>
+                                    <img src={transmitter4} alt='управление'/>
+                                    <p>дистанционный пульт</p>
+                                </div>
+                            </div>
+                            </div>
                         }
                     </div>
                     

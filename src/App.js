@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import './App.scss';
-import logo from './images/logo.png'
+import logo from './images/logo3.png'
 
 import BurMenu from './components/BurgerMenu/BurMenu';
 import Burger from './components/BurgerMenu/Burger';
@@ -29,7 +29,6 @@ import Sliding from './components/gates/gateKinds/sliding/Sliding';
 import Panoramic from './components/gates/gateKinds/panoramic/Panoramic';
 import Fast from './components/gates/gateKinds/fast/Fast';
 import Wicket from './components/gates/gateKinds/wicket/Wicket';
-import FasadeWicket from './components/gates/gateKinds/fasadeWicket/FasadeWicket';
 
 import Automation from './components/automation/Automation';
 import Barrier from './components/barrier/Barrier';
@@ -148,9 +147,6 @@ function App() {
             </Route>
             <Route path="/wicket">
               <Wicket />
-            </Route>
-            <Route path="/fasadeWicket">
-              <FasadeWicket />
             </Route>
             <Route path="/automation">
               <Automation />

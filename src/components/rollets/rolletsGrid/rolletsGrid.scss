@@ -171,7 +171,7 @@
         }
     }
 
-    .rolletGridDoorhan {
+    .rolletGridDoorhan,.steelPlus, .steelGrid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-template-rows: 1fr;
@@ -203,7 +203,7 @@
             }
         }
     }
-    .rolletDesign {
+    .rolletDesign, .steelDesign {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -229,7 +229,7 @@
             text-align: center;
         }
     }
-    .color {
+    .color, .steelControl, .steelColor {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-template-rows: 1fr;
@@ -257,4 +257,55 @@
      .additionWrapper {
          gap: 1rem;
      }
+
+     .steelPlus, .steelGrid {
+        align-items: center;
+        margin-bottom: 7rem;
+
+        li {
+            text-align: left;
+            margin-bottom: 1rem;
+            line-height: 150%;
+        }
+    }
+    .steelDesign {
+        margin-bottom: 7rem;
+
+        @media (max-width: 1150px) {
+           flex-wrap: wrap; 
+       }
+
+
+        img {
+            height: 20rem;
+            width: 15rem;
+            object-fit: fill;
+        }
+    }
+    .ral{
+        width: 15rem;
+        height: 7rem;
+        border: 1px solid grey; 
+    }
+
+   .r9006{background-color: #b5b3b4;};
+   .r9016{background-color: #fff;};
+   .r9010{background-color: rgb(250, 247, 237);};
+   .r1015{background-color: #f5e1aa;};
+   .r1001{background-color: #d2aa5a;};
+   .r7035{background-color: #b3bbb6;};
+   .r7004{background-color: #999999;};
+   .r5003{background-color: #111526;};
+   .r6005{background-color: #00281c;};
+   .r7047{background-color: #c9cac9;};
+   .r5017{background-color: #003e91;};
+   .r8017{background-color: #3d1c05;};
+   .r8014{background-color: #562707;};
+   .r6029{background-color: #005b34;};
+   .r3005{background-color: #970700;};
+   .r3002{background-color: #d12121;};
+   .r1018{background-color: #fbe22b;};
+   .r9005{background-color: black;};
+
+
 }

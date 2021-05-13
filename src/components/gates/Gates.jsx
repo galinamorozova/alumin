@@ -9,7 +9,6 @@ import panoram_vorota from '../../images/panoram_vorota.jpg';
 import raspash_vorota from '../../images/raspash_vorota.jpg';
 import otkat_vorota from '../../images/otkat_vorota.jpg';
 import otd_kalitka from '../../images/otd_kalitka.jpg';
-// import kalitka_fasad from '../../images/kalitka_fasad.jpg';
 import plenoch_vorota from '../../images/plenoch_vorota.jpg';
 import rolletGates from '../../images/rollet/prestigerollet.jpg'
 
@@ -56,10 +55,6 @@ export default function Gates() {
                         <p>отдельная калитка</p>
                      </NavLink>
                      
-                     {/* <NavLink className='product' to='/fasadeWicket'>
-                        <img src={kalitka_fasad} alt='Калитка в фасаде'></img>
-                        <p>калитка в фасаде</p>
-                     </NavLink> */}
                     
                     
                 </div>

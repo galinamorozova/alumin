@@ -50,6 +50,29 @@ import rolletTransmitter from '../../../images/doorhan/rolletTransmitter.jpg';
 import transmitter4 from '../../../images/doorhan/Transmitter4.jpg';
 import wifiModule from '../../../images/doorhan/Wi-Fi.jpg';
 
+import steelRollet from '../../../images/steel/steelRollet.jpg';
+import p60 from '../../../images/steel/p60.jpg';
+import p60p from '../../../images/steel/p60p.jpg';
+import p75 from '../../../images/steel/p75.jpg';
+import p75p from '../../../images/steel/p75p.jpg';
+import p105 from '../../../images/steel/p105.jpg';
+import p105p from '../../../images/steel/p105p.jpg';
+import p115 from '../../../images/steel/p115.jpg';
+import akaciaSt from '../../../images/steel/akacia-standart.jpg';
+import akaciaTm from '../../../images/steel/akacia-temnaya.jpg';
+import california from '../../../images/steel/california.jpg';
+import dub3D from '../../../images/steel/dub-3d.jpg';
+import dubSv from '../../../images/steel/dub-svetlii.jpg';
+import dubTm from '../../../images/steel/dub-temnii.jpg';
+import evergrin from '../../../images/steel/evergrin.jpg';
+import grusha from '../../../images/steel/grusha.jpg';
+import kashtan from '../../../images/steel/kashtan.jpg';
+import kedr from '../../../images/steel/kedr.jpg';
+import sosna from '../../../images/steel/sosna.jpg';
+import vishnya from '../../../images/steel/vishnya.jpg';
+import venge from '../../../images/steel/venge.jpg';
+import vyaz from '../../../images/steel/vyaz.jpg';
+
 export default function StandartRollets() {
 
     const [activeTab, setActiveTab] = useState(1);
@@ -65,6 +88,7 @@ export default function StandartRollets() {
                         <div className='buttonWrapper'>
                             <button autoFocus={true} onSelectCapture={true}  onClick={() => setActiveTab(1)}>alutech</button>
                             <button onClick={() => setActiveTab(2)}>doorhan</button>
+                            <button onClick={() => setActiveTab(3)}>стальные</button>
                         </div>
                         {activeTab === 1 && 
                             <div className='content'>
@@ -416,6 +440,201 @@ export default function StandartRollets() {
                                     <p>Пульт Transmitter-4 для дистанционного управления 4 автоматическими устройствами</p>
                                 </div>
                             </div>
+                        </div>
+                        }
+                        {activeTab === 3 && 
+                            <div className='content'>
+                            <h4>СТАЛЬНЫЕ ПРОТИВОВЗЛОМНЫЕ РОЛЛЕТЫ ДЛЯ ОКОН, ДВЕРЕЙ, БАЛКОНОВ</h4>
+                            <div className='steelPlus'>
+                                <img src={steelRollet} alt="стальные ворота"/>
+                                <div>
+                                    <h4>Преимущества стальных роллетных систем</h4>
+                                    <div>
+                                        <li>Стальный профиль предполагает бОльшую противовзломную защиту за счет прочности самого материала (стали) по сравнению с более "мягкими" металлами. 
+                                        Особенности конструкции роллет в сочетании со свойствами стали дают существенный антивандальный и противовзломный эффект. Чтобы их "вскрыть" - потребуется не один час.</li>
+                                        <li>Роллеты из стали обладают улучшенными противопожарными свойствами, поскольку сталь - материал негорючий.</li>
+                                        <li>Стальные рольставни и ворота изготовляются из оцинкованной холоднокатаной стали 0,8–1,2 мм методом роликовой прокатки, гибки в валках</li>
+                                        <li>Изделия обрабатываются качественной порошковой покраской с отличными защитными свойствами</li>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Виды профиля</h4>
+                            <div className='steelDesign'>
+                                <div>
+                                    <p>Профиль 60</p>
+                                    <img src={p60} alt=''/>
+                                    <p>Профиль 60П</p>
+                                    <img src={p60p} alt=''/>
+                                </div>
+                                <div>
+                                    <p>Профиль 75</p>
+                                    <img src={p75} alt=''/>
+                                    <p>Профиль 75П</p>
+                                    <img src={p75p} alt=''/>
+                                </div>
+                                <div>
+                                    <p>Профиль 105</p>
+                                    <img src={p105} alt=''/>
+                                    <p>Профиль 105П</p>
+                                    <img src={p105p} alt=''/>
+                                </div>
+                                <div>
+                                    <p>Профиль 115</p>
+                                    <img src={p115} alt=''/>
+                                </div>
+                            </div>
+                            <h4>СТАНДАРТНЫЕ ЦВЕТА ОКРАСКИ:</h4>
+                            <p> Внимание! Цвета на экране Вашего монитора могут не совпадать с истинным цветом изделий. Ориентируйтесь на кодовые обозначения по палитре RAL.</p>
+                            <div className='steelColor'>
+                                <div>
+                                    <div className='ral r9006'/>
+                                    <p>RAL 9006 (алюм-металлик)</p>
+                                </div>
+                                <div>
+                                <div className='ral r9016'/>
+                                    <p>RAL 9016 (стандартный белый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r9010'/>
+                                    <p>RAL 9010 (молочно-белый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r1015'/>
+                                    <p>RAL 1015 (стандартный бежевый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r1001'/>
+                                    <p>RAL 1001 (тяжелый бежевый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r7035'/>
+                                    <p>RAL 7035 (стандартный серый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r7004'/>
+                                    <p>RAL 7004 (тяжелый серый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r5003'/>
+                                    <p>RAL 5003 (темно синий)</p>
+                                </div>
+                                <div>
+                                <div className='ral r6005'/>
+                                    <p>RAL 6005 (темно зеленый)</p>
+                                </div>
+                                <div>
+                                    <div className='ral r7047'/>
+                                    <p>RAL 7047 (светло-серый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r5017'/>
+                                    <p>RAL 5017 (стандартный синий)</p>
+                                </div>
+                                <div>
+                                <div className='ral r8017'/>
+                                    <p>RAL 8017 (коричневый шоколад)</p>
+                                </div>
+                                <div>
+                                <div className='ral r8014'/>
+                                    <p>RAL 8014 (стандартный коричневый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r6029'/>
+                                    <p>RAL 6029 (стандартный зеленый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r3005'/>
+                                    <p>RAL 3005 (вишня)</p>
+                                </div>
+                                <div>
+                                <div className='ral r3002'/>
+                                    <p>RAL 3002 (стандартный красный)</p>
+                                </div>
+                                <div>
+                                <div className='ral r1018'/>
+                                    <p>RAL 1018 (стандартно желтый)</p>
+                                </div>
+                                <div>
+                                <div className='ral r9005'/>
+                                    <p>RAL 9005 (стандартно черный)</p>
+                                </div>
+                            </div>
+
+                            <h4>ОКРАСКА ПОД ФАКТУРУ ДЕРЕВА:</h4>
+                            <div className='steelWood'>
+                                <div>
+                                    <img src={akaciaSt} alt='цвет окрашивания'/>
+                                    <p>Акация стандарт</p>
+                                </div>
+                                <div>
+                                    <img src={dubSv} alt='цвет окрашивания'/>
+                                    <p>Дуб светлый</p>
+                                </div>
+                                <div>
+                                    <img src={dubTm} alt='цвет окрашивания'/>
+                                    <p>Дуб тёмный</p>
+                                </div>
+                                <div>
+                                    <img src={dub3D} alt='цвет окрашивания'/>
+                                    <p>Дуб 3D</p>
+                                </div>
+                                <div>
+                                    <img src={kedr} alt='цвет окрашивания'/>
+                                    <p>Кедр</p>
+                                </div>
+                                <div>
+                                    <img src={venge} alt='цвет окрашивания'/>
+                                    <p>Венге</p>
+                                </div>
+                                <div>
+                                    <img src={kashtan} alt='цвет окрашивания'/>
+                                    <p>Каштан</p>
+                                </div>
+                                <div>
+                                    <img src={akaciaTm} alt='цвет окрашивания'/>
+                                    <p>Акация тёмная</p>
+                                </div>
+                                <div>
+                                    <img src={sosna} alt='цвет окрашивания'/>
+                                    <p>Сосна</p>
+                                </div>
+                                <div>
+                                    <img src={evergrin} alt='цвет окрашивания'/>
+                                    <p>Эвергрин</p>
+                                </div>
+                                <div>
+                                    <img src={vishnya} alt='цвет окрашивания'/>
+                                    <p>Вишня</p>
+                                </div>
+                                <div>
+                                    <img src={vyaz} alt='цвет окрашивания'/>
+                                    <p>Вяз</p>
+                                </div>
+                                <div>
+                                    <img src={grusha} alt='цвет окрашивания'/>
+                                    <p>Груша</p>
+                                </div>
+                                <div>
+                                    <img src={california} alt='цвет окрашивания'/>
+                                    <p>Калифорния</p>
+                                </div>
+                            </div>
+                            <h4>ВАРИАНТЫ УПРАВЛЕНИЯ РОЛЛЕТНОЙ СИСТЕМОЙ:</h4>
+                            <div className='steelControl'>
+                                <div>
+                                    <img src={swb} alt='управление'/>
+                                    <p>клавишный переключатель</p>
+                                </div>
+                                <div>
+                                    <img src={swm} alt='управление'/>
+                                    <p>замковый переключатель</p>
+                                </div>
+                                <div>
+                                    <img src={transmitter4} alt='управление'/>
+                                    <p>дистанционный пульт</p>
+                                </div>
+                            </div>
+
                         </div>
                         }
                     </div>

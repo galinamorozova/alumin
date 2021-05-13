@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ReactIntense from 'react-intense';
 import './industrial.scss';
 import SideMenu from '../../../sideMenu/SideMenu';
 
@@ -155,7 +156,9 @@ export default function Industrial() {
                                 <img src={sgofr2} alt='S-гофр'/></div>
                             </div>
                             <h5>Палитра базовых цветов и фактур</h5>
-                            <div><img src={colorPanel} alt='цветовая схема'/></div>
+                            <div className='panelColor'>
+                                <ReactIntense src={colorPanel} moveSpeed={0}/>
+                            </div>
                             <p>* По желанию заказчика возможно нанесение на полотно ворот индивидуальных рисунков любой степени сложности методом цифровой печати.</p>
                             <h4>ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ</h4>
                             <div className='wicket'>

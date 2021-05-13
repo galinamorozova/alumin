@@ -188,11 +188,27 @@
 
         .panelColor {
 
-            width: 100%;
             img {
-                object-fit: cover;
-                width: 90%;
+                @media (max-width: 1300px) {
+                    max-height: 75%;
+                }
+                @media (max-width: 900px) {
+                    max-height: 60%;
+                }
+                @media (max-width: 780px) {
+                    max-height: 50%;
+                }
+                @media (max-width: 750px) {
+                    max-height: 40%;
+                }
                 
+                @media (max-width: 390px) {
+                    max-height: 25%;
+                }
+            }
+
+            .ri-trigger {
+                width: 436px;
             }
         }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 
 import './catalog.scss';
-import park from '../../images/park2.jpg'
+import park from '../../images/park.png'
 
 
 

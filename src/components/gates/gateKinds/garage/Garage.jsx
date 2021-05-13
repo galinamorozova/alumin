@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import ReactIntense from 'react-intense';
+
 import './garage.scss';
 import SideMenu from '../../../sideMenu/SideMenu';
 
@@ -83,8 +85,8 @@ import night from '../../../../images/hoermann/night.png';
 import renomatic from '../../../../images/hoermann/renomatic.jpg';
 import remote from '../../../../images/hoermann/remote.png';
 import prolift from '../../../../images/hoermann/prolift.png';
-import promatic from '../../../../images/hoermann/promatic.png';
-import supra from '../../../../images/hoermann/supra.png';
+import promatic from '../../../../images/hoermann/promatic.jpg';
+import supra from '../../../../images/hoermann/supra.jpg';
 
 export default function Garage() {
 
@@ -207,7 +209,7 @@ export default function Garage() {
                                 <p>* По желанию заказчика возможно нанесение на полотно ворот индивидуальных рисунков любой степени сложности методом цифровой печати.</p>
                                 <div className='panelColor'>
                                     <h5>Палитра базовых цветов и фактур</h5>
-                                    <div><img src={panelColor} alt='соотношение базовых цветов и фактур'/></div>
+                                    <ReactIntense src={panelColor} moveSpeed={0}/>
                                 </div>
                                 <h4>ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ</h4>
                                 
